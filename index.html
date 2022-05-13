@@ -1,0 +1,208 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+sitemap: true
+image: /assets/images/hero-bg.jpeg
+---
+
+{% include navbar.html %}
+
+<div
+  class="bg-white right-slant-shape py-16"
+  {% if page.image %}
+    style="
+      background-image: 
+        linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), 
+        url(
+          {{ page.image | absolute_url }}
+          );
+      background-size: cover;
+      background-position: center;
+    "
+  {% endif %}
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div>
+          <h1 class="text-white mb-3 display-4">
+            We help you price live events.
+          </h1>
+          <p class="mb-6 lead text-white">
+            A proprietary, auction-based platform to discover consumer interest in a particular event. 
+          </p>
+          <a href="/request-demo" class="btn btn-primary me-3">Request a demo now</a>
+
+          <!--
+          <a class="popup-youtube icon-shape rounded-circle btn-play icon-md bg-secondary text-white me-1 text-decoration-none font-12" href="https://www.youtube.com/watch?v=JRzWRZahOVU">
+            <i class="fas fa-play"></i>
+          </a>
+          <a href="https://www.youtube.com/watch?v=JRzWRZahOVU" class="popup-youtube text-white">Watch Video </a> 
+          -->
+
+        </div>
+      </div>
+
+      <!-- 
+      <div class="offset-xl-3 col-xl-4 offset-lg-1 col-lg-5 col-md-6 col-12 d-none d-md-block">
+        <div class="position-relative z-1">
+          <img src="/assets/images/ios-iphone12-mockup.png" alt="" class="img-fluid w-100" />
+        </div>
+      </div> 
+      -->
+
+    </div>
+  </div>
+</div>
+
+<div class="container py-6 py-md-12 mb-6 mb-6 mb-md-12 border-bottom border-light">
+  <div class="col-12 col-md-10 offset-md-1">
+    <div class="row">
+      <div class="col-md-5">
+        <h2 class="mb-3 h1 fw-light">
+          What is<br /><span class="fw-bold">OneWeek?</span>
+        </h2>
+      </div>
+      <div class="col-md-7">
+        <p class="lead">
+          OneWeek helps venues, artists, and promoters optimize ticket pricing.
+        </p>
+        <p class="lead">
+          We use a unique auction design that is fan-friendly and reduces secondary market incentives.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6 pb-md-12 mb-6 mb-md-12 border-bottom border-light">
+  <div class="col-12 col-md-10 offset-md-1">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-12 mb-6">
+        <span class="mb-4 d-block">
+          <i class="fas fa-puzzle-piece text-primary font-42"></i>
+        </span>
+        <h3 class="h-4 mb-4 fw-bold">
+          Sealed-bid Auctions
+        </h3>
+        <p class="mb-0">
+          We run 7 auctions over 7 days, allowing fans to bid on day one and have seven opportunities to get a ticket, with 1/7th of tickets sold each day.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-6">
+        <span class="mb-4 d-block">
+          <i class="fas fa-ticket-alt text-primary font-42"></i>
+        </span>
+        <h3 class="h-4 mb-4 fw-bold">
+          Price Discovery
+        </h3>
+        <p class="mb-0">
+          Fans bid the amount they think is reasonable and fair for the event, which helps you determine what the market will bear for a specific event.
+        </p>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12 mb-6">
+        <span class="mb-4 d-block">
+          <i class="fas fa-drum text-primary font-42"></i>
+        </span>
+        <h3 class="h-4 mb-4 fw-bold">
+            Supports Artists
+        </h3>
+        <p class="mb-0">
+          The auction reduces the upside for the secondary market and fans can trust that they are supporting artists directly.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6 pb-md-12 mb-6 mb-md-12 border-bottom border-light">
+  <div class="col-12 col-md-8 offset-md-2">
+
+    <div class="row align-items-center pb-6 pb-md-12">
+      <div class="col-md-6 order-2 order-md-1">
+        <h4 class="h3">Concert and Fan Club Tickets</h4>
+        <p>
+          Before an event goes on sale, allocate a portion of tickets to your OneWeek auction. After seven days of auctions, our algorithms will help you determine the optimal face value for the remaining tickets.
+        </p>
+        <p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p>
+      </div>
+      <div class="col-md-6 order-1 order-md-2">
+        <img src="/assets/images/1-01.svg" class="img-fluid" />
+      </div>
+    </div>
+
+    <div class="row align-items-center pb-6 pb-md-12">
+      <div class="col-md-6 order-2">
+        <h4 class="h3">Festival VIP and GA Tickets</h4>
+        <p>
+          When dealing with high-demand, high-volume events, like festivals, the OneWeek auction allows you to optimize all or a portion of available tickets based on actual consumer demand.
+        </p>
+        <p><a href="{{ 'how-to-price-festival-tickets/' | absolute_url }}">Learn more</a></p>
+      </div>
+      <div class="col-md-6 order-1">
+        <img src="/assets/images/1-02.svg" class="img-fluid" />
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h4 class="h3">Season Tickets & Fundraisers</h4>
+        <p>
+          When supply is limited, the OneWeek auction model can ensure that you aren’t under-pricing high-demand events or season tickets, by allowing consumers to define what they think is reasonable.
+        </p>
+        <p><a href="{{ 'how-to-price-performing-arts-tickets/' | absolute_url }}">Learn more</a></p>
+      </div>
+      <div class="col-md-6 order-1 order-md-1 ">
+        <img src="/assets/images/1-03.svg" class="img-fluid" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container pb-6 pb-md-12">
+  <div class="col-12 col-md-8 offset-md-2">
+    <h2 class="mb-4">How does OneWeek work?</h2>
+    <div class="row">
+
+      <div class="col-sm-6 col-12 mt-4">
+        <h3><span class="text-primary me-2">01</span>Create</h3>
+        <p>
+          Allocate a percentage of available tickets to your OneWeek auction.
+        </p>
+      </div>
+
+      <div class="col-sm-6 col-12 mt-4">
+        <h3><span class="text-primary me-2">02</span>Auction</h3>
+        <p>
+          Each day, for seven days, 1/7th of the allocated tickets are auctioned off.
+        </p>
+      </div>
+
+      <div class="col-sm-6 col-12 mt-4">
+        <h3><span class="text-primary me-2">03</span>Fans bid</h3>
+        <p>
+          Fans bid, and are automatically in each day’s auction, until they win a ticket or modify their bid.
+        </p>
+      </div>
+
+      <div class="col-sm-6 col-12 mt-4">
+        <h3><span class="text-primary me-2">04</span>Maximize</h3>
+        <p>
+          On day 8, OneWeek will present you with a market-equalized optimum ticket price, which can be used for the remaining face value ticket sales.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% include sub-footer.html %}
+
+{% include footer.html %}

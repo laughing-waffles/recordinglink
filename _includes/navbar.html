@@ -1,0 +1,75 @@
+<!-- header -->
+<div class="header fixed-top border-top-3 border-top border-primary">
+  <!-- navigation start -->
+  <div class="container-lg">
+    <nav class="navbar navbar-expand-lg navbar-default">
+      <a class="navbar-brand" href="{{ '/' | absolute_url }}">
+        <h1 class="fw-bolder d-block text-white h2 m-0">OneWeek</h1>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar mt-0"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-default">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar-nav ms-auto me-lg-3">
+          <li class="nav-item dropdown disabled">
+            <a class="nav-link d-lg-none" href="#">
+              Menu
+            </a>
+          </li>
+
+          {% if page.url contains "account-settings" %}
+          {% for item in site.data.nav.main-loggedin %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ item.url | absolute_url }}" {{ item.params }}>{{ item.title }}</a>
+          </li>
+          {% endfor %}
+
+          {% else %}
+
+          {% for item in site.data.nav.main %}
+          {% if item.dropdown-title %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menu-{{ forloop.index }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ item.dropdown-title }}
+            </a>
+            <ul class="dropdown-menu dropdown-menu-arrow dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="menu-{{ forloop.index }}">
+              {% for entry in item.dropdown-items %}
+              <li>
+                <a class="dropdown-list-group-item" href="{{ entry.url | absolute_url }}" {{ entry.params }}>
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                      <span class="me-3">
+                        <i class="{{ entry.icon }} font-24"></i>
+                      </span>
+                      <div>
+                        <h5 class="mb-0">{{ entry.title }}</h5>
+                        <span class="font-12 text-muted">{{ entry.subtitle }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              {% endfor %}    
+            </ul>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ item.url | absolute_url}}" {{ item.params }}>{{ item.title }}</a>
+          </li>
+          {% endif %}
+          {% endfor %}
+          {% endif %}
+        </ul> 
+        <div class="header-btn ">
+          <a href="{{ 'request-demo' | absolute_url }} " class="btn btn-primary btn-sm ">Request Demo</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- navigation close -->
+</div>

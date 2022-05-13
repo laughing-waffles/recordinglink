@@ -1,0 +1,96 @@
+main:
+  - title: Concerts
+    url: how-to-price-concert-tickets/
+  - title: Festivals 
+    url: how-to-price-festival-tickets/
+  - title: Performing Arts
+    url: how-to-price-performing-arts-tickets/
+#  - title: Museums & Attractions
+#    url: how-to-price-museum-and-attractions-tickets/
+  - title: Client Login
+    url: /s/account-settings/login-gateway/
+
+
+
+  # - dropdown-title: Buy Tickets
+  #   dropdown-items:
+  #     - title: Login
+  #       subtitle: See your bids and purchases
+  #       icon: fas fa-sign-in-alt
+  #       url: /u/account-settings/login-gateway/
+  #     - title: FAQ
+  #       subtitle: Frequently Asked Questions
+  #       icon: fas fa-info-circle
+  #       url: /faq/
+  #       params: target="_blank"
+  # - dropdown-title: Sell Tickets
+  #   dropdown-items:
+  #     - title: Login
+  #       subtitle: Manage your events
+  #       icon: fas fa-sign-in-alt
+  #       url: /s/account-settings/login-gateway/
+  #     - title: Register
+  #       subtitle: Get setup to sell
+  #       icon: fas fa-comments
+  #       url: /request-demo/
+  #     - title: FAQ
+  #       subtitle: Frequently Asked Questions
+  #       icon: fas fa-info-circle
+  #       url: /faq/
+  #       params: target="_blank"
+
+
+
+
+main-loggedin:
+  - title: Get help
+    url: /faq/
+    params: target="_blank"
+  - title: Log out
+    url: https://auth.oneweektickets.com/v2/logout?returnTo=https://www.oneweektickets.com/
+footer:
+  - column-h: Links
+    links:
+      - title: Home
+        url: /
+      - title: FAQ
+        url: /faq/
+      - title: Request demo
+        url: /request-demo/
+      - title: Feedback
+        url: https://docs.google.com/forms/d/e/1FAIpQLSeDPsLOvDszweFjJk4ugbHJYWyrWec_LIjpQeQclQzS8Ty5uw/viewform?usp=sf_link
+bottom-bar:
+  - title: Terms of Service
+    url: /terms/
+  - title: Privacy Policy
+    url: /privacy/
+account-settings-buyers:
+  - title: My Profile
+    url: /u/account-settings/profile/
+  - title: Feedback
+    url: https://docs.google.com/forms/d/e/1FAIpQLSeDPsLOvDszweFjJk4ugbHJYWyrWec_LIjpQeQclQzS8Ty5uw/viewform?usp=sf_link
+    params: target="_blank"
+billing-settings-buyers:
+  - title: Payment History
+    url: /u/account-settings/payment-history/
+account-settings-sellers:
+  - title: Events
+    url: /s/account-settings/events/
+  - title: My Profile
+    url: /s/account-settings/profile/
+  - title: Subscriptions
+    url: /s/account-settings/subscriptions/
+  - title: Security
+    url: /s/account-settings/security/
+  - title: Notificaitons
+    url: /s/account-settings/notifications/
+  - title: Users
+    url: /s/account-settings/users/
+  - title: Feedback
+    url: https://docs.google.com/forms/d/e/1FAIpQLSeDPsLOvDszweFjJk4ugbHJYWyrWec_LIjpQeQclQzS8Ty5uw/viewform?usp=sf_link
+    params: target="_blank"
+billing-settings-sellers:
+  - title: Plan & Payment
+    url: /s/account-settings/payment-plan/
+  - title: Payment History
+    url: /s/account-settings/payment-history/

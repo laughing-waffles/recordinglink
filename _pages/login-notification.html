@@ -1,0 +1,29 @@
+---
+title:					  Login Notificiation
+description:			
+layout:						default
+sitemap:          false
+---
+
+<div class="py-10">
+  <div class="container">
+    <div class="row">
+      <div class="offset-lg-2 col-lg-8 col-md-12 col-12">
+        <h2><i class="fas fa-exclamation-triangle text-danger"></i> An error has occured</h2>
+        <div class="alert alert-info" role="alert" id="errordiv">
+          Something went wrong, sorry!
+        </div>
+        <button onclick="goBack()" class="btn btn-primary">Go Back</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  const urlParams = new URLSearchParams(window.location.search);
+  $("#errordiv").text(urlParams.get('error_description'));
+  Sentry.captureMessage(urlParams.get('error_description'));
+</script>

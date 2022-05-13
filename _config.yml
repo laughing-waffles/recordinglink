@@ -1,0 +1,88 @@
+baseurl: ''
+url: 'https://laughingwaffles.github.io/recordinglink'
+title: Recording Link
+tagline: 
+description: 
+author: recordinglink
+logo: /favicon.ico
+lang: en_US
+favicon: /favicon.ico
+og_image: /assets/images/bg-hero.jpg
+mailchimp-list: 
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+include:
+  - _pages
+exclude:
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+collections:
+  landing-pages:
+    output: true
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: page
+      author: recordinglink
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: blog-single
+      permalink: '/:title'
+      is_post: true
+      sitemap: false
+  - scope:
+      path: _pages
+    values:
+      layout: page
+      permalink: '/:basename/'
+      sitemap: false
+  - scope:
+      path: _landing-pages
+    values:
+      layout: use-case-single
+      permalink: '/:path/'
+      sitemap: true
+  - scope:
+      path: "assets/*"
+    values:
+      sitemap: false
+compress_html:
+  clippings: all
+  comments:
+    - '<!-- '
+    - ' -->'
+  endings:
+    - html
+    - head
+    - body
+    - li
+    - dt
+    - dd
+    - rt
+    - rp
+    - optgroup
+    - option
+    - colgroup
+    - caption
+    - thead
+    - tbody
+    - tfoot
+    - tr
+    - td
+    - th
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []

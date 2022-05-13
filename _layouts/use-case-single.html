@@ -1,0 +1,180 @@
+---
+layout: page
+---
+
+<!-- page content -->
+<div class="py-lg-12 py-10">
+  <div class="container">
+    <!-- dashboard nav -->
+    <div class="pb-12">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-md-12 col-12">
+            <!-- row -->
+            <div class="row">
+              <div class="col-lg-4 col-md-5 col-12 mb-6 d-none d-md-block">
+                <!-- card -->
+                <div class="card border-0 rounded-3 bg-light p-2 p-lg-3" style="position: sticky; top: 100px;">
+                  <div id="form">
+                    <form
+                      action="https://formspree.io/f/xdoypaze"
+                      method="post"
+                      id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form"
+                      class="row g-2"
+                      novalidate=""
+                    >
+                      <div class="mb-3">
+                        <h5>Interested in learning more?</h5>
+                        <label class="form-label" htmlfor="fname">First name<span class="text-danger">*</span></label>
+                        <input class="form-control" type="text" name="FNAME" id="mce-FNAME" placeholder="First Name" required="" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" htmlfor="lname">Last name<span class="text-danger">*</span></label>
+                        <input class="form-control" type="text" name="LNAME" id="mce-LNAME" placeholder="Last Name" required="" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" htmlfor="email">Email<span class="text-danger">*</span></label>
+                        <input class="form-control" type="email" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" required="" />
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" for="orgtype">Organization type<span class="text-danger">*</span></label>
+                        <select class="form-select" name="ORGTYPE" id="mce-ORGTYPE">
+                          <option selected="">Select one... </option>
+                          <option defaultvalue="Artist">Artist </option>
+                          <option defaultvalue="Venue">Venue </option>
+                          <option defaultvalue="Promoter">Promoter </option>
+                          <option defaultvalue="Agent / Manager">Agent / Manager </option>
+                          <option defaultvalue="Other">Other </option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label" htmlfor="WEBSITE">Organization website</label>
+                        <input class="form-control" type="url" name="WEBSITE" id="mce-WEBSITE" placeholder="https://www..." required="" />
+                      </div>
+                      <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                      </div>
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f0d949cdf0a6a387f7b55a173_4f123ead61" tabindex="-1" defaultvalue="" /></div>
+                      <div class="mb-3 mt-2 d-grid"><button type="submit" class="btn btn-primary" defaultvalue="Request a call" name="subscribe" id="mc-embedded-subscribe">Request Demo</button></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-7 col-12">
+                <!-- summary -->
+                <div class="ps-md-4 pe-md-8 mb-4">
+                  <span class="text-primary">Summary</span>
+                  {% if page.summary_title %}
+                  <h1 class="mt-3">{{ page.summary_title }}</h1>
+                  {% endif %} {% if page.summary_body %}
+                  <p>{{ page.summary_body | markdownify }}</p>
+                  {% endif %}
+                </div>
+                <!-- Challenge -->
+                <div class="ps-md-4 pe-md-8 mb-4">
+                  <span class="text-primary">Challenge</span>
+                  <p class="mt-3 mb-0">
+                    {{ page.challange_body | markdownify }}
+                  </p>
+                </div>
+                <!-- Strategy -->
+                <div class="ps-md-4 pe-md-8 mb-4">
+                  <span class="text-primary">Solution</span>
+                  <h2 class="mt-3">{{ page.strategy_title }}</h2>
+                  <p class="mt-3 mb-4">
+                    {{ page.strategy_body | markdownify }}
+                  </p>
+                  <!-- row -->
+                  <div class="row">
+                    <div class="col">
+                      <h4>{{ page.strategy_col1_title }}</h4>
+                      <p class="mb-0">{{ page.strategy_col1_body }}</p>
+                    </div>
+                    <div class="col">
+                      <h4>{{ page.strategy_col2_title }}</h4>
+                      <p class="mb-0">{{ page.strategy_col2_body }}</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- img -->
+                <div class="ps-md-4 mb-4">
+                  <img src="{{page.image_body }}" class="img-fluid rounded-3" />
+                </div>
+                <!-- Results -->
+                <div class="ps-md-4 pe-md-8 mb-4">
+                  <span class="text-primary">Results</span>
+                  <h3 class="mt-3">{{ page.results_title }}</h3>
+                  <!-- list -->
+                  <ul class="list-unstyled">
+                    {% for item in page.results_list %}
+                    <li>- {{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                  <!-- para -->
+                  <p class="mt-3">
+                    {{ page.results_body | markdownify }}
+                  </p>
+                </div>
+                <div class="ps-md-4 mb-4">
+                  <!-- para -->
+                  <div class="border-top border-bottom py-5">
+                    <span class="h2 mb-3 d-block"><i class="fas fa-quote-left text-secondary"></i></span>
+                    <p class="font-35 text-secondary font-weight-bolder font-italic lh-md">
+                      {{ page.quote_body }}
+                    </p>
+                    <span class="font-weight-medium font-18">- {{ page.quote_source }}</span>
+                  </div>
+                </div>
+                <!-- para -->
+                <div class="ps-md-4 pe-md-8 mb-4">
+                  {{ page.conclusion | markdownify }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-12">
+          <div class="col-md-8 col-12">
+            <h2>Use cases for OneWeek</h2>
+          </div>
+          <div class="col-md-4 col-12 text-md-end">
+            <a href="{{ 'how-to-price-event-tickets' | absolute_url }}" class="btn btn-secondary">View All Cases</a>
+          </div>
+        </div>
+        <div class="row mt-6">
+          {% for landing-page in site.landing-pages limit:3 %}
+          <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+            <!-- card -->
+            <div class="card border-0 rounded-3 bg-transparent mb-4 mb-md-8">
+              <!-- card img -->
+              <a href="{{ landing-page.url | absolute_url }}">
+                <div class="bg-cover py-18 rounded-3" style="background-image: url({{ landing-page.image | absolute_url }});"></div>
+              </a>
+              <!-- row -->
+              <div class="row mt-md-n15 mt-n8 ms-md-2">
+                <div class="col-lg-10 col-md-12 col-12">
+                  <div class="card border-0 rounded-3 bg-primary">
+                    <!-- card body -->
+                    <div class="card-body p-4">
+                      <!-- <img src="../assets/images/logo-airbnb.svg" alt="" class="color-white-filter mb-4" /> -->
+                      <a href="{{ landing-page.url | absolute_url }}">
+                        <h3 class="text-white mb-4">{{ landing-page.title }}</h3>
+                      </a>
+                      <a href="{{ landing-page.url | absolute_url }}" class="text-white">Read Full Case Study</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include sub-footer.html %}
