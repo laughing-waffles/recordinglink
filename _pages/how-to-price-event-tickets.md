@@ -8,7 +8,7 @@ layout: page
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-md-12 col-12">
-        <h3 class="text-white mb-4">Use cases for OneWeek Tickets</h3>
+        <h3 class="text-white mb-4">Use cases for TransferVox</h3>
         {% for landing-page in site.landing-pages %}
         <!-- card -->
         <div class="card border-0 rounded-3 bg-transparent mb-4 mb-md-8">

@@ -1,24 +1,24 @@
 ---
-title:					  Login
+title: Login
 description:			
-layout:						default
-sitemap:          false
+layout: default
+sitemap: false
 ---
 
 <!-- content section -->
 <div class="d-flex align-items-center position-relative vh-100 bg-light">
-  <div class="col-lg-5 col-xl-4 d-none d-lg-flex border-top border-primary border-top-4 align-items-center vh-100 px-0" style="background-image: url({{'../assets/images/hero-bg.jpeg' | absolute_url}}); background-position: 13% 50%;"></div>
+  <div class="col-lg-5 col-xl-4 d-none d-lg-flex border-top border-primary border-top-4 align-items-center vh-100 px-0" style="background-image: url({{ '../assets/images/hero-bg.jpg' | absolute_url}}); background-position: 13% 50%;"></div>
   <div class="container">
     <div class="row no-gutters">
       <div class="col-md-8 col-lg-7 col-xl-6 offset-md-2 offset-lg-2 offset-xl-3 space-top-3 space-lg-0">
         <!-- Form -->  
         <div class="bg-white p-4 p-xl-6 p-xxl-8 p-lg-4 rounded-lg border">
-          <form action="/s/account-settings/events">
-            <h1 class="mb-1 text-center h3">Welcome Ticket Sellers</h1>
-            <p class="mb-4 text-center">This signin is for promoters and artist who are selling tickets on OneWeek.</p>
+          <form>
+            <h1 class="mb-1 text-center h3">Welcome</h1>
+            <p class="mb-4 text-center">This sign-in is for current customers of TransferVox.</p>
             <div class="mb-3">
               <label for="email" class="form-label">Email<span class="text-danger">*</span> </label>
-              <input type="email" id="email" class="form-control" placeholder="Email address" pattern="admin@oneweektickets.com" required="" />
+              <input type="email" id="email" class="form-control" placeholder="Email address" required="" />
             </div>
             <div class="mb-4">
               <label for="password" class="form-label">Password<span class="text-danger">*</span></label>
@@ -43,10 +43,10 @@ sitemap:          false
         <div class="mt-3 nav-footer-links">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" href="{{'privacy' | absolute_url }}" rel="nofollow">Privacy Policy </a>
+              <a class="nav-link active" href="{{ 'privacy' | absolute_url }}" rel="nofollow">Privacy Policy </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{'terms' | absolute_url }}" rel="nofollow">Terms &amp; Conditions</a>
+              <a class="nav-link" href="{{ 'terms' | absolute_url }}" rel="nofollow">Terms &amp; Conditions</a>
             </li>
           </ul>
         </div>

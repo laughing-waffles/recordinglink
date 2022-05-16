@@ -23,7 +23,7 @@ strategy_body: |
   Academic and economic research finds that auction pricing in the primary market significantly improves price discovery, <b>roughly doubles artist revenues</b> and disincentivizes secondary market players from scooping up low-priced tickets and reselling them on the secondary market.
 strategy_col1_title: Hosted solution
 strategy_col1_body: |
-  By linking to an event landing page hosted by OneWeek, sellers enjoy a full suite of seller tools, including the OneWeek auction, user management, payment processing, data analytics, and ticketing issuance. 
+  By linking to an event landing page hosted by TransferVox, sellers enjoy a full suite of seller tools, including the TransferVox auction, user management, payment processing, data analytics, and ticketing issuance. 
 strategy_col2_title: API integration
 strategy_col2_body: |
   For sellers with an existing ticketing platform and a development team, our API can be utilized for running the auction and triggering email events that fire on any ticketing platform the seller chooses to integrate with. 

@@ -1,9 +1,9 @@
 baseurl: ''
-url: 'https://laughing-waffles.github.io/recordinglink/'
-title: Recording Link
+url: 'https://transfervox.com'
+title: TransferVox
 tagline: 
 description: 
-author: recordinglink
+author: transfervox
 logo: /favicon.ico
 lang: en_US
 favicon: /favicon.ico
@@ -33,7 +33,7 @@ defaults:
       path: ''
     values:
       layout: page
-      author: recordinglink
+      author: TransferVox
   - scope:
       path: ''
       type: posts

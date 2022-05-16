@@ -1,6 +1,6 @@
 ---
-title:						Request a demo of OneWeek Tickets
-description:			Get in touch with our sales team for a demo of OneWeek Tickets
+title:						Request a demo of TransferVox
+description:			Get in touch with our sales team for a demo of TransferVox
 layout:						default
 ---
 
@@ -12,14 +12,14 @@ layout:						default
         <div class="p-xl-12 py-4 pr-xl-9 p-lg-8">
           <div class="d-flex justify-content-between mb-7 align-items-center">
             <a href="/">
-              <h1 class="d-block text-black m-0 h3 font-weight-bolder">OneWeek</h1>
+              <h1 class="d-block text-black m-0 h3 font-weight-bolder">TransferVox</h1>
             </a>
-            <span class="font-14 font-weight-bold text-dark">Call Us: +1 310.571.5210</span>
+            <!-- <span class="font-14 font-weight-bold text-dark">Call Us: +1 310.571.5210</span> -->
           </div>
           <div class="mb-10">
-            <h1 class="display-4 mb-4">Let’s talk about your business.</h1>
+            <h1 class="display-4 mb-4">Let’s get things moving.</h1>
             <p class="lead">
-              Offer your fans a better ticketing experience using our unique auction model.
+              Need to transfer audio files from a service such as 8x8, dubber, or RingCentral? We can help.
             </p>
             <p>
               Fill out this form and one of our account representatives will be in touch with you shortly.
@@ -57,13 +57,13 @@ layout:						default
               <div class="form-floating mb-3">
                 <select class="form-select" name="ORGTYPE" id="mce-ORGTYPE">
                   <option selected>Select one...</option>
-                  <option defaultValue="Artist">Artist</option>
-                  <option defaultValue="Venue">Venue</option>
-                  <option defaultValue="Promoter">Promoter</option>
-                  <option defaultValue="Agent / Manager">Agent / Manager</option>
+                  <option defaultValue="8x8">8x8</option>
+                  <option defaultValue="dubber">dubber</option>
+                  <option defaultValue="RingCentral">RingCentral</option>
+                  <option defaultValue="OrecX">OrecX</option>
                   <option defaultValue="Other">Other</option>
                 </select>
-                <label class="form-label" for="orgtype">Organization Type<span class="text-danger">*</span></label>
+                <label class="form-label" for="orgtype">Voice Recording Service<span class="text-danger">*</span></label>
               </div>
               <div class="form-floating mb-3">
                 <input class="form-control" type="url" name="MMERGE6" id="mce-MMERGE6" placeholder="https://www..." required="" />
@@ -88,7 +88,7 @@ layout:						default
     </div>
     <div 
       class="col-lg-6 d-lg-flex align-items-center d-none d-md-none d-lg-block w-50 min-vh-100 position-fixed bg-cover" 
-      style="background-image: url(../assets/images/hero-bg.jpeg); right: 0; top: 0"
+      style="background-image: url(../assets/images/hero-bg.jpg); right: 0; top: 0"
     >
   </div>
 </div>

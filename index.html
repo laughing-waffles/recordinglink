@@ -10,7 +10,7 @@ image: /assets/images/hero-bg.jpg
 {% include navbar.html %}
 
 <div
-  class="bg-white right-slant-shape py-16"
+  class="bg-white py-16"
   {% if page.image %}
     style="
       background-image: 
@@ -57,12 +57,38 @@ image: /assets/images/hero-bg.jpg
   </div>
 </div>
 
+
+<div class="mb-0 bg-light d-none d-lg-block">
+  <div class="container d-flex h-100">
+    <div class="row justify-content-center align-self-center text-center py-3">
+      <div class="col-md-2 my-auto px-3 px-xl-5">
+        <img src="{{ '/assets/images/logos/logo-gdpr.svg' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
+      </div>
+      <div class="col-md-2 my-auto px-3 px-xl-5">
+        <img src="{{ '/assets/images/logos/logo-hippa.jpg' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
+      </div>
+      <div class="col-md-2 my-auto px-3 px-xl-5">
+        <img src="{{ '/assets/images/logos/logo-ccpa.svg' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
+      </div>
+      <div class="col-md-2 my-auto px-3 px-xl-5"> 
+        <img src="{{ '/assets/images/logos/logo-hitrust.png' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="g" loading="lazy" crossorigin="anonymous">
+      </div>
+      <div class="col-md-2 my-auto px-3 px-xl-5">
+        <img src="{{ '/assets/images/logos/logo-soc2.png' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
+      </div>
+      <div class="col-md-2 my-auto px-3 px-xl-5">
+        <img src="{{ '/assets/images/logos/logo-pci.png' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container py-6 py-md-12 mb-6 mb-6 mb-md-12 border-bottom border-light">
   <div class="col-12 col-md-10 offset-md-1">
     <div class="row">
       <div class="col-md-5">
         <h2 class="mb-3 h1 fw-light">
-          What is<br /><span class="fw-bold">RecordingLink?</span>
+          What is<br /><span class="fw-bold">TransferVox?</span>
         </h2>
       </div>
       <div class="col-md-7">
@@ -77,7 +103,7 @@ image: /assets/images/hero-bg.jpg
   </div>
 </div>
 
-<div class="container pb-6 pb-md-12 mb-6 mb-md-12 border-bottom border-light">
+<!-- <div class="container pb-6 pb-md-12 mb-6 mb-md-12 border-bottom border-light">
   <div class="col-12 col-md-10 offset-md-1">
     <div class="row">
 
@@ -119,18 +145,18 @@ image: /assets/images/hero-bg.jpg
 
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container pb-6 pb-md-12 mb-6 mb-md-12 border-bottom border-light">
   <div class="col-12 col-md-8 offset-md-2">
 
     <div class="row align-items-center pb-6 pb-md-12">
       <div class="col-md-6 order-2 order-md-1">
-        <h4 class="h3">Concert and Fan Club Tickets</h4>
+        <h4 class="h3">Break free from silos</h4>
         <p>
-          Before an event goes on sale, allocate a portion of tickets to your OneWeek auction. After seven days of auctions, our algorithms will help you determine the optimal face value for the remaining tickets.
+          Don’t let your sensitive call recording data be locked to a particular vendor. TransferVox allows you to securely and efficiently move your data to another location. Break free from arbitrary retention policies set by your provider — store your call recordings for the precise length of time you need and do it cheaply!
         </p>
-        <p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p>
+        <!-- <p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> -->
       </div>
       <div class="col-md-6 order-1 order-md-2">
         <img src="{{ '/assets/images/1-01.svg' | absolute_url }}" class="img-fluid" />
@@ -139,11 +165,11 @@ image: /assets/images/hero-bg.jpg
 
     <div class="row align-items-center pb-6 pb-md-12">
       <div class="col-md-6 order-2">
-        <h4 class="h3">Festival VIP and GA Tickets</h4>
+        <h4 class="h3">Move recordings to other platforms</h4>
         <p>
-          When dealing with high-demand, high-volume events, like festivals, the OneWeek auction allows you to optimize all or a portion of available tickets based on actual consumer demand.
+          Need better AI or NLP for your calls? TransferVox ensures that you aren’t stuck with the services included by your telephony / meeting provider. Get access to the latest and greatest speech analytics — and change with ease when the next new thing comes along.
         </p>
-        <p><a href="{{ 'how-to-price-festival-tickets/' | absolute_url }}">Learn more</a></p>
+        <!-- <p><a href="{{ 'how-to-price-festival-tickets/' | absolute_url }}">Learn more</a></p> -->
       </div>
       <div class="col-md-6 order-1">
         <img src="{{ '/assets/images/1-02.svg' | absolute_url }}" class="img-fluid" />
@@ -152,11 +178,11 @@ image: /assets/images/hero-bg.jpg
 
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
-        <h4 class="h3">Season Tickets & Fundraisers</h4>
+        <h4 class="h3">Complete compliance</h4>
         <p>
-          When supply is limited, the OneWeek auction model can ensure that you aren’t under-pricing high-demand events or season tickets, by allowing consumers to define what they think is reasonable.
+          Relying on a single vendor to manage your call recordings leaves you exposed to hackers, inadvertent deletions, and other mishaps. You wouldn’t backup your mission critical data to a single datacenter. Keep your call recording storage diversified so that it is available on your terms and under your control.
         </p>
-        <p><a href="{{ 'how-to-price-performing-arts-tickets/' | absolute_url }}">Learn more</a></p>
+        <!-- <p><a href="{{ 'how-to-price-performing-arts-tickets/' | absolute_url }}">Learn more</a></p> -->
       </div>
       <div class="col-md-6 order-1 order-md-1 ">
         <img src="{{ '/assets/images/1-03.svg' | absolute_url }}" class="img-fluid" />
@@ -168,13 +194,33 @@ image: /assets/images/hero-bg.jpg
 
 <div class="container pb-6 pb-md-12">
   <div class="col-12 col-md-8 offset-md-2">
-    <h2 class="mb-4">How does OneWeek work?</h2>
+    <h2 class="mb-4">How it works</h2>
+    <p>
+      RecordingLink seamlessly connects with your telephony platform and monitors for any new call recordings that occur. As soon as the recording is available, RecordingLink picks it up and transfers it to the endpoint that you’ve specified. This is all done with full encryption in transit and no data is ever stored at rest by RecordingLink. 
+    </p>
+    <p>
+      Our systems create a secure tunnel between the originator platform and the receiver platform, only utilizing tools that are HIPAA and PCI/DSS compliant. No matter how sensitive your data, you can rest assured that we never have access or visibility to the recording itself. 
+    </p>
+    <h4 class="mb-4">Outage protection</h2>
+    <p>
+      If either the originator or receiver platform has an outage — you never have to worry. RecordingLink queues the recording and will automatically catch back up once the service is restored. 
+    </p>
+    <h4 class="mb-4">Secure secondary storage</h2>
+    <p>
+      By default, we don’t store your call recordings. However, we offer fully-managed storage on an opt-in basis, where we store your recordings in an isolated and encrypted Amazon Web Services S3 bucket. This is recommended as a failsafe for extreme situations, but you get the benefit of our discounted AWS rates based on the large volume of recordings we store for customers. (It’s often cheaper to store with RecordingLink than pointing your recordings to your own S3 bucket — but it’s your choice!)
+    </p>
+  </div>
+</div>
+
+<!-- <div class="container pb-6 pb-md-12">
+  <div class="col-12 col-md-8 offset-md-2">
+    <h2 class="mb-4">How does TransferVox work?</h2>
     <div class="row">
 
       <div class="col-sm-6 col-12 mt-4">
         <h3><span class="text-primary me-2">01</span>Create</h3>
         <p>
-          Allocate a percentage of available tickets to your OneWeek auction.
+          Allocate a percentage of available tickets to your TransferVox auction.
         </p>
       </div>
 
@@ -195,14 +241,12 @@ image: /assets/images/hero-bg.jpg
       <div class="col-sm-6 col-12 mt-4">
         <h3><span class="text-primary me-2">04</span>Maximize</h3>
         <p>
-          On day 8, OneWeek will present you with a market-equalized optimum ticket price, which can be used for the remaining face value ticket sales.
+          On day 8, TransferVox will present you with a market-equalized optimum ticket price, which can be used for the remaining face value ticket sales.
         </p>
       </div>
 
     </div>
   </div>
-</div>
-
-{% include sub-footer.html %}
+</div> -->
 
 {% include footer.html %}

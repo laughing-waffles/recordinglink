@@ -20,17 +20,17 @@ summary_body: |
   
   <b>There is a better way.</b>
 
-  OneWeek Tickets is a ticket sales platform that helps performing arts organizations optimize season ticket pricing. We maximize ticket sales volume and revenues with auction-based price discovery.
+  TransferVox is a ticket sales platform that helps performing arts organizations optimize season ticket pricing. We maximize ticket sales volume and revenues with auction-based price discovery.
 challange_body: |
   Season ticket holders represent the financial backbone of the arts. They are often willing to financially support the organizations they patronize, all you have to do is ask. Allowing for such supporters to offer any amount for season tickets and other items is a sure-fire way to strengthen your revenues. 
 strategy_title: Pay what you want
 strategy_body: |
   Academic and economic research finds that auction pricing significantly improves price discovery and <b>roughly doubles revenues</b>.
 
-  OneWeek Tickets is different because our auction design utilizes a 7-day recurring blind auction, providing data to sellers and opportunities to buyers to engage in a conversation which results in the optimal market price to be discovered for any event.
+  TransferVox is different because our auction design utilizes a 7-day recurring blind auction, providing data to sellers and opportunities to buyers to engage in a conversation which results in the optimal market price to be discovered for any event.
 strategy_col1_title: Hosted solution
 strategy_col1_body: |
-  By linking to an event or season ticket offering landing page hosted by OneWeek, sellers enjoy a full suite of seller tools, including the OneWeek auction, user management, payment processing, data analytics, and ticketing issuance. 
+  By linking to an event or season ticket offering landing page hosted by TransferVox, sellers enjoy a full suite of seller tools, including the TransferVox auction, user management, payment processing, data analytics, and ticketing issuance. 
 strategy_col2_title: API integration
 strategy_col2_body: |
   For sellers with an existing ticketing platform and a development team, our API can be utilized for running the auction and triggering email events that fire on any ticketing platform the seller chooses to integrate with. 
