@@ -27,7 +27,7 @@ layout:						default
           </div>
           <div id="form">
             <form
-              action="https://formspree.io/f/mleaognl"
+              action="https://formspree.io/f/xwkyaaop"
               method="post"
               id="mc-embedded-subscribe-form"
               name="mc-embedded-subscribe-form"
