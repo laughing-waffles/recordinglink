@@ -7,14 +7,14 @@ layout: compress
   <head>
 
     {% if jekyll.environment == 'production' %}
-    <script async src="xxx"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJHPMJWQNK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "xxx");
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GJHPMJWQNK');
     </script>
     {% endif %}
 
