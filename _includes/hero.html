@@ -3,13 +3,8 @@
   class="{% if page.layout != 'home' %}bg-shape bg-cover{% endif %} bg-dark" 
   {% if page.image %}
     style="
-      background-image: 
-        linear-gradient(180deg, rgba(30, 24, 53, 0.4) 0%, rgba(30, 24, 53, 0.4) 90.16%), 
-        url(
-          {{ page.image | absolute_url }}
-          );
-      background-size: cover;
-      background-position: center;
+      background: rgb(0,0,0);
+      background: linear-gradient(168deg, rgba(0,0,0,1) 0%, rgba(0,153,204,1) 100%);
     "
   {% endif %}
 >
