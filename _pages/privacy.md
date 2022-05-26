@@ -1,6 +1,6 @@
 ---
 title:						Privacy Policy
-description:			Protecting user data and respecting the privacy of those who choose to visit this page is critical. Understand your rights as a visitor to TransferVoxtickets.com by reading this page.
+description:			Protecting user data and respecting the privacy of those who choose to visit this page is critical. Understand your rights as a visitor to TransferVox.com by reading this page.
 layout:						legal
 sitemap:          false
 ---
@@ -23,7 +23,7 @@ If we ask for your personal information for a secondary reason, like marketing, 
 
 How do I withdraw my consent?
 
-If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at getintouch@TransferVoxtickets.com or mailing us at: 
+If after you opt-in, you change your mind, you may withdraw your consent for us to contact you, for the continued collection, use or disclosure of your information, at anytime, by contacting us at getintouch@TransferVox.com or mailing us at: 
 
 TransferVox
 PO Box 6724
@@ -69,7 +69,7 @@ If our store is acquired or merged with another company, your information may be
 
 ### QUESTIONS AND CONTACT INFORMATION
 
-If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at getintouch@TransferVoxtickets.com or by mail at:
+If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at getintouch@TransferVox.com or by mail at:
 
 TransferVox  
 PO Box 6724  

@@ -13,51 +13,7 @@ layout: page
           <div class="col-lg-4 col-md-5 col-12 mb-6 d-none d-md-block">
             <!-- card -->
             <div class="card border-0 rounded-3 bg-light p-2 p-lg-3" style="position: sticky; top: 100px;">
-              <div id="form">
-                <form
-                  action="https://formspree.io/f/xwkyaaop"
-                  method="post"
-                  id="mc-embedded-subscribe-form"
-                  name="mc-embedded-subscribe-form"
-                  class="row g-2"
-                  novalidate=""
-                >
-                  <div class="mb-3">
-                    <h5>Interested in learning more?</h5>
-                    <label class="form-label" htmlfor="fname">First name<span class="text-danger">*</span></label>
-                    <input class="form-control" type="text" name="FNAME" id="mce-FNAME" placeholder="First Name" required="" />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" htmlfor="lname">Last name<span class="text-danger">*</span></label>
-                    <input class="form-control" type="text" name="LNAME" id="mce-LNAME" placeholder="Last Name" required="" />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" htmlfor="email">Email<span class="text-danger">*</span></label>
-                    <input class="form-control" type="email" name="EMAIL" id="mce-EMAIL" placeholder="Email Address" required="" />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" for="orgtype">Organization type<span class="text-danger">*</span></label>
-                    <select class="form-select" name="ORGTYPE" id="mce-ORGTYPE">
-                      <option selected="">Select one... </option>
-                      <option defaultvalue="Artist">Artist </option>
-                      <option defaultvalue="Venue">Venue </option>
-                      <option defaultvalue="Promoter">Promoter </option>
-                      <option defaultvalue="Agent / Manager">Agent / Manager </option>
-                      <option defaultvalue="Other">Other </option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label" htmlfor="WEBSITE">Organization website</label>
-                    <input class="form-control" type="url" name="WEBSITE" id="mce-WEBSITE" placeholder="https://www..." required="" />
-                  </div>
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display: none;"></div>
-                    <div class="response" id="mce-success-response" style="display: none;"></div>
-                  </div>
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f0d949cdf0a6a387f7b55a173_4f123ead61" tabindex="-1" defaultvalue="" /></div>
-                  <div class="mb-3 mt-2 d-grid"><button type="submit" class="btn btn-primary" defaultvalue="Request a call" name="subscribe" id="mc-embedded-subscribe">Request Demo</button></div>
-                </form>
-              </div>
+              {% include form-lead.html %}
             </div>
           </div>
           <div class="col-lg-8 col-md-7 col-12">
@@ -134,8 +90,8 @@ layout: page
       </div>
     </div>
 
-    <div class="row justify-content-center">
-      <div class="col-lg-10 col-md-12 col-12">
+    <div class="container pb-6 pb-md-12">
+      <div class="col-12 col-md-8 offset-md-2">
         {% include pricing.html %}
       </div>
     </div>

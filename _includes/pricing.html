@@ -1,49 +1,23 @@
-<div class="row row-cols-1 row-cols-md-3 mb-3">
-  <div class="col mb-5">
+<div class="row row-cols-1 row-cols-md-2 mb-3">
+  <div class="col mb-5 p-2">
     <div class="card mb-4 rounded-3 shadow-sm h-100">
       <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Starter</h4>
+        <h4 class="my-0 fw-normal">Standard{% if page.discount == true %} <span class="small text-danger">50% discount for Evolve IP customers*</span>{% endif %}</h4>
       </div>
-      <div class="card-body">
+      <div class="card-body py-3 pt-3 pb-0">
         <h1 class="card-title pricing-card-title">
-          $7.50<small class="text-muted fw-light">/user</small>
+          {% if page.discount == true %}$3.75{% else %}$7.50{% endif %}<small class="text-muted fw-light">/user per month</small>
         </h1>
-        <ul class="list-unstyled mt-3 mb-4 font-12">
-          <li>$7.50 per user per month</li>
+        <ul class="list-unstyled mt-3 mb-0">
           <li>Includes 1,000 recordings per user</li>
-          <li>Overage $1 per 1k recordings per user</li>
+          <hr>
           <li>Receive files via SFTP</li>
-          <li><s>Receive files via Gong.io</s></li>
-          <li><s>Managed AWS storage $0.015 per GB</s></li>
-        </ul>
-      </div>
-      <div class="card-footer bg-white border-0">
-        <a
-        type="button"
-        href="{{ 'request-demo' | absolute_url }}"
-        class="w-100 btn btn-lg btn-outline-primary"
-        >
-          Contact Us
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="col mb-5">
-    <div class="card mb-4 rounded-3 shadow-sm h-100">
-      <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Pro</h4>
-      </div>
-      <div class="card-body">
-        <h1 class="card-title pricing-card-title">
-          $8.50<small class="text-muted fw-light">/user</small>
-        </h1>
-        <ul class="list-unstyled mt-3 mb-4 font-12">
-          <li>$7.50 per user per month</li>
-          <li>Includes 1,000 recordings per user</li>
-          <li>Overage $1 per 1k recordings per user</li>
-          <li>Receive files via SFTP</li>
-          <li>Receive files via Gong.io</li>
-          <li><s>Managed AWS storage $0.015 per GB</s></li>
+          <hr>
+          <li>$1 per 1k extra recordings per user</li>
+          {% if page.discount == true %}
+          <hr>
+          <li class="fst-italic"><span class="text-danger">*</span>Standard pricing is $7.50/user per month</li>
+          {% endif %}
         </ul>
       </div>
       <div class="card-footer bg-white border-0">
@@ -60,26 +34,29 @@
   <div class="col mb-5">
     <div class="card mb-4 rounded-3 shadow-sm h-100 border-primary">
       <div class="card-header py-3 text-white bg-primary border-primary">
-        <h4 class="my-0 fw-normal"><strong>Enterprise</strong></h4>
+        <h4 class="my-0 fw-normal text-white"><strong>Enterprise</strong></h4>
       </div>
-      <div class="card-body">
+      <div class="card-body py-3 pt-3 pb-0">
         <h1 class="card-title pricing-card-title">
           Custom
         </h1>
-        <ul class="list-unstyled mt-3 mb-4 font-12">
-          <li>$7.50 per user per month</li>
+        <ul class="list-unstyled mt-3 mb-0">
           <li>Includes 1,000 recordings per user</li>
-          <li>Overage $1 per 1k recordings per user</li>
+          <hr>
           <li>Receive files via SFTP</li>
-          <li>Receive files via Gong.io</li>
-          <li>Managed AWS storage $0.015 per GB</li>
+          <hr>
+          <li>$1 per 1k extra recordings per user</li>
+          <hr>
+          <li>Transfer to Gong.io, S3, etc.</li>
+          <hr>
+          <li>Managed AWS storage</li>
         </ul>
       </div>
       <div class="card-footer bg-white border-0">
         <a
         type="button"
         href="{{ 'request-demo' | absolute_url }}"
-        class="w-100 btn btn-lg btn-outline-primary"
+        class="w-100 btn btn-lg btn-primary"
         >
           Contact Us
         </a>

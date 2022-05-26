@@ -1,6 +1,6 @@
 ---
 title: Terms and Conditions
-description: All visitors and users of TransferVoxtickets.com agree to these terms and conditions 
+description: All visitors and users of TransferVox.com agree to these terms and conditions 
 layout: legal
 sitemap: false
 ---
@@ -157,4 +157,4 @@ We reserve the right, at our sole discretion, to update, change or replace any p
 
 ## SECTION 20 – CONTACT INFORMATION
 
-Questions about the Terms of Service should be sent to us at getintouch@TransferVoxtickets.com.
+Questions about the Terms of Service should be sent to us at getintouch@TransferVox.com.
