@@ -57,31 +57,7 @@ image: /assets/images/hero-bg.jpg
   </div>
 </div>
 
-
-<div class="mb-0 bg-light d-none d-lg-block">
-  <div class="container d-flex h-100">
-    <div class="row justify-content-center align-self-center text-center py-3">
-      <div class="col-md-2 my-auto px-3 px-xl-5">
-        <img src="{{ '/assets/images/logos/logo-gdpr.svg' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
-      </div>
-      <div class="col-md-2 my-auto px-3 px-xl-5">
-        <img src="{{ '/assets/images/logos/logo-hippa.jpg' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
-      </div>
-      <div class="col-md-2 my-auto px-3 px-xl-5">
-        <img src="{{ '/assets/images/logos/logo-ccpa.svg' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
-      </div>
-      <div class="col-md-2 my-auto px-3 px-xl-5"> 
-        <img src="{{ '/assets/images/logos/logo-hitrust.png' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="g" loading="lazy" crossorigin="anonymous">
-      </div>
-      <div class="col-md-2 my-auto px-3 px-xl-5">
-        <img src="{{ '/assets/images/logos/logo-soc2.png' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
-      </div>
-      <div class="col-md-2 my-auto px-3 px-xl-5">
-        <img src="{{ '/assets/images/logos/logo-pci.png' | relative_url }}" class="grayscale img-fluid bg-white round shadow px-5 py-3" alt="" loading="lazy" crossorigin="anonymous">
-      </div>
-    </div>
-  </div>
-</div>
+{% include compliance-logos.html %}
 
 <div class="container py-6 py-md-12 mb-6 mb-6 mb-md-12 border-bottom border-light">
   <div class="col-12 col-md-10 offset-md-1">

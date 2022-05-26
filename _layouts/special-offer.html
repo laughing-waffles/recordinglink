@@ -19,6 +19,9 @@ layout: page
           <div class="col-lg-8 col-md-7 col-12">
             <!-- summary -->
             <div class="ps-md-4 pe-md-8 mb-4">
+              <div class="ps-md-4 mb-4 bg-light p-5 shadow-sm rounded">
+                <img src="{{page.image_body }}" class="img-fluid rounded-3" />
+              </div>
               {% if page.summary_title %}
               <h1 class="mt-3">{{ page.summary_title }}</h1>
               {% endif %} {% if page.summary_body %}
@@ -31,9 +34,6 @@ layout: page
               <p class="mt-3 mb-0">
                 {{ page.challange_body | markdownify }}
               </p>
-            </div>
-            <div class="ps-md-4 mb-4 bg-light p-5 shadow-sm rounded">
-              <img src="{{page.image_body }}" class="img-fluid rounded-3" />
             </div>
             <!-- Strategy -->
             <div class="ps-md-4 pe-md-8 mb-4">
@@ -53,46 +53,22 @@ layout: page
                 </div>
               </div>
             </div>
-            <!-- img -->
-
-            <!-- Results -->
-            <div class="ps-md-4 pe-md-8 mb-4">
-              <h3 class="mt-3">{{ page.results_title }}</h3>
-              <!-- list -->
-              <ul class="list-unstyled">
-                {% for item in page.results_list %}
-                <li>- {{ item }}</li>
-                {% endfor %}
-              </ul>
-              <!-- para -->
-              <p class="mt-3">
-                {{ page.results_body | markdownify }}
-              </p>
-            </div>
-            <div class="ps-md-4 mb-4">
-              <!-- para -->
-              <div class="border-top border-bottom py-5">
-                <span class="h2 mb-3 d-block"><i class="fas fa-quote-left text-secondary"></i></span>
-                <p class="font-35 text-secondary font-weight-bolder font-italic lh-md">
-                  {{ page.quote_body }}
-                </p>
-                <span class="font-weight-medium font-18">- {{ page.quote_source }}</span>
-              </div>
-            </div>
-            <!-- para -->
-            <div class="ps-md-4 pe-md-8 mb-4">
-              {{ page.conclusion | markdownify }}
-            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container pb-6 pb-md-12">
+    <div class="container">
       <div class="col-12 col-md-8 offset-md-2">
         {% include pricing.html %}
+        <!-- para -->
+        <div class="ps-md-4 pe-md-8 fst-italic">
+          <p><span class="text-danger">*</span>Pricing is a lifetime discount for the initial number of users. Any additional users added in the future will be priced at our standard retail rates.</p>
+          {{ page.conclusion | markdownify }}
+        </div>
       </div>
     </div>
 
   </div>
 </div>
+{% include compliance-logos.html %}
