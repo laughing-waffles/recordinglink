@@ -6,17 +6,17 @@
       </div>
       <div class="card-body py-3 pt-3 pb-0">
         <h1 class="card-title pricing-card-title">
-          {% if page.discount == true %}$3.75{% else %}$7.50{% endif %} <br /><small class="text-muted fw-light">per user per month</small>
+          {% if page.discount == true %}<strike>$7.50</strike> $3.75{% else %}$7.50{% endif %} <br /><small class="text-muted fw-light">per user per month</small>
         </h1>
         <ul class="list-unstyled mt-3 mb-0">
           <li>Includes 1,000 recordings per user</li>
           <hr>
           <li>$1 per 1k extra recordings per user</li>
           <hr>
-          <li>Send files to AWS S3, Google Cloud Storage, Azure Storage, or your own server (using SFTP, SCP, or FTPS)</li>
+          <li>Send files to AWS S3, Google Cloud Storage, Azure Storage, or your own server (using SFTP, SCP, or FTPS). <br /><small>Each additional endpoint after the first may incur fees.</small></li>
           {% if page.discount == true %}
           <hr>
-          <li class="fst-italic"><span class="text-danger">*</span>Standard pricing is $7.50/user per month</li>
+          <li class="fst-italic"><span class="text-danger">*</span>Pricing is a lifetime discount for the initial number of users. Any additional users added in the future will be priced at our standard retail rates.</li>
           {% endif %}
         </ul>
       </div>
@@ -43,7 +43,7 @@
         <ul class="list-unstyled mt-3 mb-0">
           <li>If you have unique needs, get in touch:</li>
           <hr>
-          <li>Larger volume call recordings</li>
+          <li>High volume of call recordings</li>
           <hr>
           <li>One-time bulk transfers</li>
           <hr>
