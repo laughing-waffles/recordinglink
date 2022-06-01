@@ -8,3 +8,4 @@ _site
 _posts
 .vscode
 .jekyll-cache/
+.DS_Store
