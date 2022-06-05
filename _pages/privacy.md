@@ -7,7 +7,7 @@ sitemap:          false
 
 ## SECTION 1 – WHAT DO WE DO WITH YOUR INFORMATION?
 
-When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.
+When you interact with our web site, we may collect the personal information you give us such as your name, address and email address.
 
 When you browse our store, we also automatically receive your computer’s internet protocol (IP) address in order to provide us with information that helps us learn about your browser and operating system.
 
@@ -17,7 +17,7 @@ Email marketing (if applicable): With your permission, we may send you emails ab
 
 How do you get my consent?
 
-When you provide us with personal information to complete a transaction, verify your credit card, place an order, arrange for a delivery or return a purchase, we imply that you consent to our collecting it and using it for that specific reason only.
+When you provide us with personal information to complete a transaction, verify your credit card, or place an order, we imply that you consent to our collecting it and using it for that specific reason only.
 
 If we ask for your personal information for a secondary reason, like marketing, we will either ask you directly for your expressed consent, or provide you with an opportunity to say no.  
 
@@ -69,7 +69,7 @@ If our store is acquired or merged with another company, your information may be
 
 ### QUESTIONS AND CONTACT INFORMATION
 
-If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at getintouch@TransferVox.com or by mail at:
+If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at team@transfervox.com or by mail at:
 
 TransferVox  
 PO Box 6724  
