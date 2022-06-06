@@ -2,7 +2,7 @@
   <div class="col mb-5 p-2">
     <div class="card mb-4 rounded-3 shadow-sm h-100">
       <div class="card-header py-3">
-        <h4 class="my-0 fw-normal">Standard{% if page.discount == true %} <span class="small text-danger">33% discount for Evolve IP customers*</span>{% endif %}</h4>
+        <h4 class="my-0 fw-normal">Standard{% if page.discount == true %} <span class="small text-danger">33% discount for {{ page.discount_name }} customers*</span>{% endif %}</h4>
       </div>
       <div class="card-body py-3 pt-3 pb-0">
         <h1 class="card-title pricing-card-title">

@@ -2,11 +2,11 @@
 layout: special-offer
 title: Export call recordings from RingCentral
 description: Break your calls free from RingCentral
-sitemap: false
 discount: true
+discount_name: RingCentral
 summary: 
 image_hero: /assets/images/sources/ringcentral.png
-image_body: /assets/images/logos/logo-evolveip.png
+image_body: /assets/images/logos/logo-ringcentral.svg
 summary_title: Export your calls to another service
 summary_body: |
     Vendor lock-in hurts everyone. TransferVox makes it easy to automatically and continuously export your calls to another service.
@@ -23,5 +23,5 @@ strategy_col2_title: Reliability
 strategy_col2_body: |
   Maintain your compliance by ensuring that you have a secondary storage for your call recordings. 
 conclusion: |
-  The use of the Evolve IP name and logo do not constitute an endorsement or certification by Evolve IP of TransferVox. We are an independent company that provides services to Evolve IP customers.
+  The use of the RingCentral name and logo do not constitute an endorsement or certification by RingCentral of TransferVox. We are an independent company that provides services to RingCentral customers.
 ---

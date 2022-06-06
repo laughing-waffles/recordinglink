@@ -4,6 +4,7 @@ title: Evolve IP Customers
 description: Special offer for customers of Evolve IP
 sitemap: false
 discount: true
+discount_name: Evolve IP
 summary: 
 image_hero: /assets/images/logos/logo-evolveip.png
 image_body: /assets/images/logos/logo-evolveip.png
