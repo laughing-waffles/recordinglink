@@ -82,51 +82,15 @@ image: /assets/images/hero-bg.jpg
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
               <div class="carousel-inner">
 
-                <div class="carousel-item active" data-bs-interval="2000">
-                  <img src="assets/images/services/dubber.jpeg" class="d-block w-100" width="200px" height="115px" />
+                {% for item in site.data.services.from %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
+                  <div class="ratio ratio-4x3">
+                    <div>
+                      <img src="{{ item.image | prepend: 'assets/images/services/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle" alt="{{ item.name }} logo" />
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/webex.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/orecx.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/grasshopper.jpeg" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/mitel.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/3cx.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/sangoma.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/microsoftteams.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/googlemeet.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/zoom.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/five9.jpeg" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/justcall.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/dialpad.png" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/8x8.jpeg" class="d-block w-100" width="200px" height="115px" />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="assets/images/services/ringcentral.jpeg" class="d-block w-100" width="200px" height="115px" />
-                </div>
+                {% endfor %}
 
               </div>
             </div>
@@ -134,40 +98,22 @@ image: /assets/images/hero-bg.jpg
           </div>
 
           <div class="col-md-2">
-            <i class="fa-solid fa-arrow-right"></i>
+            <i class="fa-solid fa-arrow-right position-absolute top-50 start-50 translate-middle"></i>
           </div>
           
           <div class="col-md-5">
             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
               <div class="carousel-inner">
 
-                <div class="carousel-item active" data-bs-interval="2525">
-                  <img src="assets/images/export/descript.jpeg" class="d-block w-100" width="200px" height="115px"  />
+                {% for item in site.data.services.to %}
+                <div class="carousel-item {% if forloop.first %}active{% endif %}" data-bs-interval="2525">
+                  <div class="ratio ratio-4x3">
+                    <div>
+                      <img src="{{ item.image | prepend: 'assets/images/services/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle" alt="{{ item.name }} logo" />
+                    </div>
+                  </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/sftp.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/gong.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/googlecloud.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/callminer.jpeg" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/azure.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/quicktranscript.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/sftp.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2525">
-                  <img src="assets/images/export/s3.png" class="d-block w-100" width="200px" height="115px"  />
-                </div>
+                {% endfor %}
 
               </div>
             </div>
