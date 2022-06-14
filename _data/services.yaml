@@ -1,0 +1,66 @@
+from: 
+  - name: 3cx
+    image: 3cx.png
+  - name: 8x8
+    image: 8x8.svg
+  - name: dialpad
+    image: dialpad.svg
+  - name: dubber
+    image: dubber.svg
+  - name: evolveip
+    image: evolveip.svg
+  - name: five9
+    image: five9.svg
+  - name: googlemeet
+    image: googlemeet.png
+  - name: grasshopper
+    image: grasshopper.jpeg
+  - name: justcall
+    image: justcall.svg
+  - name: microsoftteams
+    image: microsoftteams.png
+  - name: mitel
+    image: mitel.png
+  - name: orecx
+    image: orecx.png
+  - name: ringcentral
+    image: ringcentral.svg
+  - name: sangoma
+    image: sangoma.png
+  - name: webex
+    image: webex.png
+  - name: zoom
+    image: zoom.png
+to:
+  - name: zoom
+    image: zoom.png
+  - name: webex
+    image: webex.png
+  - name: sangoma
+    image: sangoma.png
+  - name: ringcentral
+    image: ringcentral.svg
+  - name: orecx
+    image: orecx.png
+  - name: mitel
+    image: mitel.png
+  - name: microsoftteams
+    image: microsoftteams.png
+  - name: justcall
+    image: justcall.svg
+  - name: grasshopper
+    image: grasshopper.jpeg
+  - name: googlemeet
+    image: googlemeet.png
+  - name: five9
+    image: five9.svg
+  - name: evolveip
+    image: evolveip.svg
+  - name: dubber
+    image: dubber.svg
+  - name: dialpad
+    image: dialpad.svg
+  - name: 8x8
+    image: 8x8.svg
+  - name: 3cx
+    image: 3cx.png
