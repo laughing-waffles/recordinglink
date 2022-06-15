@@ -1,0 +1,103 @@
+---
+layout: page
+---
+
+<!-- {% include from-to.html %} -->
+
+<!-- page content -->
+<div class="py-lg-12 py-10">
+  <div class="container">
+    <!-- dashboard nav -->
+    <div class="row justify-content-center mb-10">
+      <div class="col-lg-10 col-md-12 col-12">
+        <!-- row -->
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-12 mb-6 d-none d-md-block">
+            <!-- card -->
+            <div
+              class="card border-0 rounded-3 bg-light p-2 p-lg-3"
+              style="position: sticky; top: 100px"
+            >
+              {% include form-lead.html %}
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 col-12">
+            <!-- summary -->
+            <div class="ps-md-4 pe-md-8 mb-4">
+              <div class="ps-md-4 mb-4 bg-light p-5 shadow-sm rounded">
+                <img src="{{ page.offer_image }}" class="img-fluid rounded-3" />
+              </div>
+              <h1 class="mt-3">Export your calls to another service</h1>
+              <p>
+                Vendor lock-in hurts everyone. TransferVox makes it easy to
+                automatically and continuously export your calls to another
+                service.
+              </p>
+            </div>
+            <!-- Challenge -->
+            <div class="ps-md-4 pe-md-8 mb-4">
+              <span class="text-primary">Export Options</span>
+              <p class="mt-3 mb-0">
+                We support a myriad of export endpoints. Whether you need to get
+                your calls from {{ page.offer_name }} to an SFTP server, or you
+                want to migrate your call recordings to encrypted AWS S3 storage
+                for long-term and cost effective archiving — we are prepared to
+                make it simple. We also support Gong.io, Chorus.ai, and other
+                third-party tools.
+              </p>
+            </div>
+            <!-- Strategy -->
+            <div class="ps-md-4 pe-md-8 mb-4">
+              <h2 class="mt-3">Why use TransferVox?</h2>
+              <p class="mt-3 mb-4">
+                We specialize solely in securely and reliably transferring call
+                recordings from a variety of vendors. Our systems are robust and
+                single-focused, allowing us to minimize downtime and ensure that
+                each and every recording is transferred as expected. Even if an
+                endpoint goes down, our system keeps track of the outage and
+                will automatically catch back up once the endpoint is restored.
+              </p>
+              <!-- row -->
+              <div class="row">
+                <div class="col">
+                  <h4>Encrypted and Secured</h4>
+                  <p class="mb-0">
+                    We only utilize fully encrypted communications to transfer
+                    your recordings. This means everything is secured in transit
+                    and at rest.
+                  </p>
+                </div>
+                <div class="col">
+                  <h4>Reliability</h4>
+                  <p class="mb-0">
+                    Maintain your compliance by ensuring that you have a
+                    secondary storage for your call recordings.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-12 col-md-8 offset-md-2">
+        {% include pricing.html %}
+        <!-- para -->
+        <div class="ps-md-4 pe-md-8 fst-italic">
+          <p>
+            <span class="text-danger">*</span>Pricing is a lifetime discount for
+            the initial number of users. Any additional users added in the
+            future will be priced at our standard retail rates.
+          </p>
+          The use of the {{ page.offer_name }} name and logo do not constitute
+          an endorsement or certification by {{ page.offer_name }} of
+          TransferVox. We are an independent company that provides services to
+          {{ page.offer_name }} customers.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include compliance-logos.html %}
