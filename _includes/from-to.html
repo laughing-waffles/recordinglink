@@ -4,7 +4,11 @@
   </span>
   <div class="branch lv1">
     {% for entry in page.exportendpoints %}
-    <div class="entry"><span class="label">{{ entry }}</span></div>
+    <div class="entry">
+      <span class="label">
+        <img src="{{ entry.image | prepend: '/assets/images/logos/' }}" alt="{{ entry.name }}" class="img-fluid rounded-3" width="60px" />
+        </span>
+      </div>
     {% endfor %}
   </div>
 </div>

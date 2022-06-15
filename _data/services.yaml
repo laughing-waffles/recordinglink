@@ -1,66 +1,83 @@
 from: 
-  - name: 3cx
-    image: 3cx.png
-  - name: 8x8
+  - id: 3cx
+    name: 3cx
+    image: 3cx.svg
+  - id: 8x8
+    name: 8x8
     image: 8x8.svg
-  - name: dialpad
+  - id: dialpad
+    name: Dialpad
     image: dialpad.svg
-  - name: dubber
+  - id: dubber
+    name: Dubber
     image: dubber.svg
-  - name: evolveip
+  - id: evolveip
+    name: Evolve IP
     image: evolveip.svg
-  - name: five9
+  - id: five9
+    name: Five9
     image: five9.svg
-  - name: googlemeet
-    image: googlemeet.png
-  - name: grasshopper
-    image: grasshopper.jpeg
-  - name: justcall
+  - id: googlemeet
+    name: Google Meet
+    image: googlemeet.svg
+  - id: grasshopper
+    name: Grasshopper
+    image: grasshopper.svg
+  - id: justcall
+    name: JustCall
     image: justcall.svg
-  - name: microsoftteams
-    image: microsoftteams.png
-  - name: mitel
-    image: mitel.png
-  - name: orecx
-    image: orecx.png
-  - name: ringcentral
+  - id: microsoftteams
+    name: Microsoft Teams
+    image: microsoftteams.svg
+  - id: mitel
+    name: Mitel
+    image: mitel.svg
+  - id: orecx
+    name: OrecX
+    image: orecx.svg
+  - id: ringcentral
+    name: RingCentral
     image: ringcentral.svg
-  - name: sangoma
-    image: sangoma.png
-  - name: webex
-    image: webex.png
-  - name: zoom
-    image: zoom.png
+  - id: sangoma
+    name: Sangoma
+    image: sangoma.svg
+  - id: webex
+    name: Cisco WebEx
+    image: webex.svg
+  - id: zoom
+    name: Zoom
+    image: zoom.svg
+  - id: kixie
+    name: Kixie
+    image: kixie.svg
 to:
-  - name: zoom
-    image: zoom.png
-  - name: webex
-    image: webex.png
-  - name: sangoma
-    image: sangoma.png
-  - name: ringcentral
-    image: ringcentral.svg
-  - name: orecx
-    image: orecx.png
-  - name: mitel
-    image: mitel.png
-  - name: microsoftteams
-    image: microsoftteams.png
-  - name: justcall
-    image: justcall.svg
-  - name: grasshopper
-    image: grasshopper.jpeg
-  - name: googlemeet
-    image: googlemeet.png
-  - name: five9
-    image: five9.svg
-  - name: evolveip
-    image: evolveip.svg
-  - name: dubber
-    image: dubber.svg
-  - name: dialpad
-    image: dialpad.svg
-  - name: 8x8
-    image: 8x8.svg
-  - name: 3cx
-    image: 3cx.png
+  - id: sftp
+    name: SFTP
+    image: sftp.svg
+  - id: gong
+    name: Gong.io
+    image: gong.svg
+  - id: callminer
+    name: CallMiner
+    image: callminer.svg
+  - id: amazons3
+    name: Amazon S3
+    image: amazons3.svg
+  - id: googlecloudstorage
+    name: Google Cloud Storage
+    image: googlecloudstorage.svg
+  - id: azure
+    name: Microsoft Azure Storage
+    image: azure.svg
+  # - id: scp
+  #   name: SCP
+  #   image: scp.svg
+  - id: chorus
+    name: Chorus.ai
+    image: chorus.svg
+  # - id: quicktranscript
+  #   name: QuickTranscript
+  #   image: quicktranscript.svg
+  - id: trint
+    name: Trint
+    image: trint.svg
