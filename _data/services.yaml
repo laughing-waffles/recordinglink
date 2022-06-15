@@ -1,0 +1,83 @@
+from: 
+  - id: 3cx
+    name: 3cx
+    image: 3cx.svg
+  - id: 8x8
+    name: 8x8
+    image: 8x8.svg
+  - id: dialpad
+    name: Dialpad
+    image: dialpad.svg
+  - id: dubber
+    name: Dubber
+    image: dubber.svg
+  - id: evolveip
+    name: Evolve IP
+    image: evolveip.svg
+  - id: five9
+    name: Five9
+    image: five9.svg
+  - id: googlemeet
+    name: Google Meet
+    image: googlemeet.svg
+  - id: grasshopper
+    name: Grasshopper
+    image: grasshopper.svg
+  - id: justcall
+    name: JustCall
+    image: justcall.svg
+  - id: microsoftteams
+    name: Microsoft Teams
+    image: microsoftteams.svg
+  - id: mitel
+    name: Mitel
+    image: mitel.svg
+  - id: orecx
+    name: OrecX
+    image: orecx.svg
+  - id: ringcentral
+    name: RingCentral
+    image: ringcentral.svg
+  - id: sangoma
+    name: Sangoma
+    image: sangoma.svg
+  - id: webex
+    name: Cisco WebEx
+    image: webex.svg
+  - id: zoom
+    name: Zoom
+    image: zoom.svg
+  - id: kixie
+    name: Kixie
+    image: kixie.svg
+to:
+  - id: sftp
+    name: SFTP
+    image: sftp.svg
+  - id: gong
+    name: Gong.io
+    image: gong.svg
+  - id: callminer
+    name: CallMiner
+    image: callminer.svg
+  - id: amazons3
+    name: Amazon S3
+    image: amazons3.svg
+  - id: googlecloudstorage
+    name: Google Cloud Storage
+    image: googlecloudstorage.svg
+  - id: azure
+    name: Microsoft Azure Storage
+    image: azure.svg
+  # - id: scp
+  #   name: SCP
+  #   image: scp.svg
+  - id: chorus
+    name: Chorus.ai
+    image: chorus.svg
+  # - id: quicktranscript
+  #   name: QuickTranscript
+  #   image: quicktranscript.svg
+  - id: trint
+    name: Trint
+    image: trint.svg

@@ -59,22 +59,55 @@ image: /assets/images/hero-bg.jpg
 
 {% include compliance-logos.html %}
 
-<div class="container py-6 py-md-12 mb-6 mb-6 mb-md-12 border-bottom border-light">
+<div class="container py-6 py-md-12 border-bottom border-light">
   <div class="col-12 col-md-10 offset-md-1">
     <div class="row">
-      <div class="col-md-5">
-        <h2 class="mb-3 h1 fw-light">
-          What is<br /><span class="fw-bold">TransferVox?</span>
+      <div class="col-6 col-md-5">
+        <h2 class="mb-3 h1 fw-light d-block position-relative top-50 start-50 translate-middle">
+          To and from<br /><span class="fw-bold">everywhere</span>
         </h2>
       </div>
-      <div class="col-md-7">
-        <p class="lead">
-          Securely transfer call recordings from anywhere, to anywhere.
-        </p>
-        <p class="lead">
-          Break your recordings out of your vendor silos and retain data ownership.
-        </p>
+
+      <div class="col-6 col-md-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
+          <div class="carousel-inner">
+
+            {% for item in site.data.services.from %}
+            <div class="carousel-item bg-white {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
+              <div class="ratio ratio-4x3">
+                <div>
+                  <img src="{{ item.image | prepend: 'assets/images/logos/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="{{ item.name }} logo" />
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
       </div>
+
+      <div class="col-2 col-md-1 d-none d-md-block">
+        <i class="fa-solid fa-arrow-right position-absolute top-50 start-50 translate-middle"></i>
+      </div>
+      
+      <div class="col-5 col-md-3 d-none d-md-block">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
+          <div class="carousel-inner">
+
+            {% for item in site.data.services.to %}
+            <div class="carousel-item bg-white {% if forloop.first %}active{% endif %}" data-bs-interval="2525">
+              <div class="ratio ratio-4x3">
+                <div>
+                  <img src="{{ item.image | prepend: 'assets/images/logos/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="{{ item.name }} logo" />
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
@@ -92,7 +125,7 @@ image: /assets/images/hero-bg.jpg
         <!-- <p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> -->
       </div>
       <div class="col-md-6 order-1 order-md-2">
-        <img src="{{ '/assets/images/225.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
+        <img src="{{ '/assets/images/313.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
       </div>
     </div>
 
@@ -118,7 +151,7 @@ image: /assets/images/hero-bg.jpg
         <!-- <p><a href="{{ 'how-to-price-performing-arts-tickets/' | absolute_url }}">Learn more</a></p> -->
       </div>
       <div class="col-md-6 order-1 order-md-1 ">
-        <img src="{{ '/assets/images/313.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
+        <img src="{{ '/assets/images/225.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
       </div>
     </div>
 
@@ -150,42 +183,5 @@ image: /assets/images/hero-bg.jpg
     </p>
   </div>
 </div>
-
-<!-- <div class="container pb-6 pb-md-12">
-  <div class="col-12 col-md-8 offset-md-2">
-    <h2 class="mb-4">How does TransferVox work?</h2>
-    <div class="row">
-
-      <div class="col-sm-6 col-12 mt-4">
-        <h3><span class="text-primary me-2">01</span>Create</h3>
-        <p>
-          Allocate a percentage of available tickets to your TransferVox auction.
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-12 mt-4">
-        <h3><span class="text-primary me-2">02</span>Auction</h3>
-        <p>
-          Each day, for seven days, 1/7th of the allocated tickets are auctioned off.
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-12 mt-4">
-        <h3><span class="text-primary me-2">03</span>Fans bid</h3>
-        <p>
-          Fans bid, and are automatically in each day’s auction, until they win a ticket or modify their bid.
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-12 mt-4">
-        <h3><span class="text-primary me-2">04</span>Maximize</h3>
-        <p>
-          On day 8, TransferVox will present you with a market-equalized optimum ticket price, which can be used for the remaining face value ticket sales.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</div> -->
 
 {% include footer.html %}
