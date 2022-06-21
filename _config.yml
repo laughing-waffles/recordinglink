@@ -41,19 +41,16 @@ defaults:
       layout: blog-single
       permalink: '/:title'
       is_post: true
-      sitemap: false
   - scope:
       path: _pages
     values:
       layout: page
       permalink: '/:basename/'
-      sitemap: false
   - scope:
       path: _landing-pages
     values:
       layout: use-case-single
       permalink: '/:path/'
-      sitemap: true
   - scope:
       path: "assets/*"
     values:

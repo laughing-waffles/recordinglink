@@ -5,5 +5,4 @@ offer_name: Evolve IP
 offer_image: /assets/images/logos/evolveip.svg
 layout: evolveip
 discount: true
-sitemap: false
 ---
