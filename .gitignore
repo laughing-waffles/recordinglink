@@ -3,9 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 .env
-.DS_Store
-.vscode
-_posts
 .vscode
 .jekyll-cache/
 .DS_Store

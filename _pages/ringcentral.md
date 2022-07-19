@@ -4,7 +4,7 @@ description: Break your calls free from RingCentral
 offer_name: RingCentral
 offer_image: /assets/images/logos/ringcentral.svg
 layout: landing-page
-discount: true
+discount: false
 exportendpoints:
   - id: sftp
     name: SFTP
