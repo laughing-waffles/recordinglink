@@ -1,5 +1,6 @@
 --
-title: what other front matter do i need?
+layout: post
+title: Connect RingCentral and Gong.io
 --
 
 RingCentral is a cloud-based business communications provider that offers a complete suite of unified communication (UC) and collaboration products and services. It has been used by more than 20 million people in over 180 countries.
