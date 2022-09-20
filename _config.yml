@@ -38,7 +38,7 @@ defaults:
       path: ''
       type: posts
     values:
-      layout: blog-single
+      layout: post
       permalink: '/:title'
       is_post: true
   - scope:
