@@ -28,7 +28,7 @@ from:
     image: justcall.svg
   - id: microsoftteams
     name: Microsoft Teams
-    image: microsoftteams.svg
+    image: teams.png
   - id: mitel
     name: Mitel
     image: mitel.svg
@@ -53,7 +53,7 @@ from:
 to:
   - id: sftp
     name: SFTP
-    image: sftp.svg
+    image: sftp.png
   - id: gong
     name: Gong.io
     image: gong.svg
@@ -69,9 +69,9 @@ to:
   - id: azure
     name: Microsoft Azure Storage
     image: azure.svg
-  # - id: scp
-  #   name: SCP
-  #   image: scp.svg
+  - id: email
+    name: Email
+    image: email.png
   - id: chorus
     name: Chorus.ai
     image: chorus.svg
@@ -81,3 +81,12 @@ to:
   - id: trint
     name: Trint
     image: trint.svg
+  - id: tableau
+    name: Tableau
+    image: tableau.png
+  - id: domo
+    name: Domo
+    image: domo.png
+  - id: powerbi
+    name: Power BI
+    image: powerbi.png
