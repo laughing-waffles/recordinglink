@@ -1,7 +1,9 @@
---
+---
 layout: post
 title: Connect Dubber and Amazon S3
---
+service1: Dubber
+service2: Amazon Web Services
+---
 
 Dubber is one of most reliable, secure, and scalable call recording software available to businesses. Dubber automatically records incoming and outgoing calls and stores the data in one place. No downloads or installations are required on your end to use Dubber. You can choose to access your recordings from any device from anywhere in the world. With Dubber, you'll always have access to your data as long as you have internet connection.
 
@@ -9,9 +11,6 @@ AWS S3 is a cloud storage provider that is well-renowned for... well, storing da
 
 TransferVox can connect Dubber to Amazon S3 so that you can have a secondary backup of your recordings, or so that you can parse the calls using your own internal systems. TransferVox also offers other endpoints for your recordings, including SFTP, Azure, and Google Cloud Platform. 
 
-<hr />
-{% include form-lead.html %}
-<hr />
 
 ## Everything about Dubber
 
@@ -27,4 +26,4 @@ Storing on Amazon is safer for many reasons - but it mostly comes down to two th
 TransferVox, the absolute experts in call recording migrations, has just announced a new feature that will seamlessly integrate Dubber and S3. TransferVox seamlessly integrates the two, so that your recordings are immediately available in Amazon S3. TransferVox also works with a wide variety of other destination services to meet your needs. 
 
 
-<a href="https://transfervox.com/request-demo/">Get in touch with TransferVox today!</a>
+<a href="https://transfervox.com/request-demo/" class="btn btn-outline-dark">Get in touch with TransferVox today!</a>

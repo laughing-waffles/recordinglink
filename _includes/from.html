@@ -1,0 +1,15 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
+  <div class="carousel-inner">
+
+    {% for item in site.data.services.from %}
+    <div class="carousel-item bg-white {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
+      <div class="ratio ratio-4x3">
+        <div>
+          <img src="{{ item.image | prepend: '/assets/images/logos/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="{{ item.name }} logo" />
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</div>

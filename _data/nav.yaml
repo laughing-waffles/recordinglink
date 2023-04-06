@@ -7,8 +7,12 @@ main:
   #   url: how-to-price-performing-arts-tickets
   # - title: Museums & Attractions
   #   url: how-to-price-museum-and-attractions-tickets/
-  - title: Client Login
-    url: login
+  - dropdown-title: Services
+    dropdown-items:
+      - title: Dubber
+        url: /dubber
+      - title: Litigation / eDiscovery
+        url: /ediscovery
 bottom-bar:
   - title: Terms of Service
     url: /terms/

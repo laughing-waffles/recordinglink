@@ -1,11 +1,43 @@
 ---
 layout: page
 ---
+<!-- page content -->
+<div class="py-lg-12 py-10">
+  <div class="container">
+    <!-- dashboard nav -->
+    <div class="row justify-content-center mb-10">
+      <div class="col-lg-10 col-md-12 col-12">
+        <!-- row -->
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-12 mb-6 d-none d-md-block">
+            <!-- card -->
+            <div
+              class="card border-0 rounded-3 bg-light p-2 p-lg-3"
+              style="position: sticky; top: 100px"
+            >
+              {% include form-lead.html %}
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7 col-12">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="py-12">
-  <div class="row">
-    <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-12">
-      {{content}}
+    <div class="container">
+      <div class="col-12 col-md-8 offset-md-2">
+        <!-- para -->
+        {% if page.service1 %}
+        <div class="ps-md-4 pe-md-8 fst-italic">
+          The use of the {{ page.service1 }} and {{ page.service2 }} name and logo do not constitute
+          an endorsement or certification by {{ page.service1 }} or {{ page.service2 }} of
+          TransferVox. We are an independent company that provides services to
+          {{ page.service1 }} and {{ page.service2 }} customers.
+        </div>
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>
+{% include compliance-logos.html %}

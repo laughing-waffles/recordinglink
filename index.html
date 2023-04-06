@@ -69,46 +69,18 @@ image: /assets/images/hero-bg.webp
       </div>
 
       <div class="col-6 col-md-3">
-        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
-          <div class="carousel-inner">
-
-            {% for item in site.data.services.from %}
-            <div class="carousel-item bg-white {% if forloop.first %}active{% endif %}" data-bs-interval="2000">
-              <div class="ratio ratio-4x3">
-                <div>
-                  <img src="{{ item.image | prepend: 'assets/images/logos/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="{{ item.name }} logo" />
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-
-          </div>
-        </div>
+        {% include from.html %}
       </div>
 
       <div class="col-2 col-md-1 d-none d-md-block">
-        <i class="fa-solid fa-arrow-right position-absolute top-50 start-50 translate-middle"></i>
+        <!-- <i class="fa-solid fa-arrow-right position-absolute top-50 start-50 translate-middle"></i> -->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 position-relative start-0 top-50 translate-middle-y">
           <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
         </svg>
       </div>
 
       <div class="col-5 col-md-3 d-none d-md-block">
-        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" pause="false" data-bs-ride="carousel" data-bs-touch="false">
-          <div class="carousel-inner">
-
-            {% for item in site.data.services.to %}
-            <div class="carousel-item bg-white {% if forloop.first %}active{% endif %}" data-bs-interval="2525">
-              <div class="ratio ratio-4x3">
-                <div>
-                  <img src="{{ item.image | prepend: 'assets/images/logos/' }}" class="d-block w-100 position-absolute top-50 start-50 translate-middle p-3" alt="{{ item.name }} logo" />
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-
-          </div>
-        </div>
+        {% include to.html %}
       </div>
 
     </div>

@@ -1,7 +1,9 @@
---
+---
 layout: post
 title: Connect RingCentral and Gong.io
---
+service1: RingCentral
+service2: Gong.io
+---
 
 RingCentral is a cloud-based business communications provider that offers a complete suite of unified communication (UC) and collaboration products and services. It has been used by more than 20 million people in over 180 countries.
 
@@ -9,9 +11,7 @@ Gong.io is a call recording and coaching tool that helps sales teams to create b
 
 TransferVox can connect Gong.io with RingCentral to record all your calls automatically and easily review them later in Gong's interface or in the RingCentral dashboard.
 
-<hr />
-{% include form-lead.html %}
-<hr />
+
 
 ## Everything about RingCentral
 
@@ -32,4 +32,4 @@ TransferVox, a technology leader in the VoIP industry, has just announced a new 
 
 Additionally, it's easy to add retention to your call recordings for compliance or regulatory needs. Avoid RingCentral's cumbersome fees and confusing storage pricing by using TransferVox. 
 
-<a href="https://transfervox.com/ringcentral">Get started with TransferVox today!</a>
+<a href="https://transfervox.com/ringcentral"  class="btn btn-outline-dark">Get started with TransferVox today!</a>
