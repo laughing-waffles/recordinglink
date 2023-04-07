@@ -31,7 +31,7 @@ layout:						default
     </div>
     <div 
       class="col-lg-6 d-lg-flex align-items-center d-none d-md-none d-lg-block w-50 min-vh-100 position-fixed bg-cover" 
-      style="background-image: url(../assets/images/hero-bg.webp); right: 0; top: 0"
+      style="background-image: url(../assets/images/demoimage.jpg); right: 0; top: 0"
     >
   </div>
 </div>
