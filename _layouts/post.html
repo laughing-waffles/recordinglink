@@ -30,10 +30,10 @@ layout: page
         <!-- para -->
         {% if page.service1 %}
         <div class="ps-md-4 pe-md-8 fst-italic">
-          The use of the {{ page.service1 }} and {{ page.service2 }} name and logo do not constitute
-          an endorsement or certification by {{ page.service1 }} or {{ page.service2 }} of
+          The use of the {{ page.service1 }} {% if page.service2 %}and {{ page.service2 }} {% endif %}name and logo do not constitute
+          an endorsement or certification by {{ page.service1 }} {% if page.service2 %}or {{ page.service2 }} {% endif %}of
           TransferVox. We are an independent company that provides services to
-          {{ page.service1 }} and {{ page.service2 }} customers.
+          {{ page.service1 }} {% if page.service2 %}and {{ page.service2 }} {% endif %}customers.
         </div>
         {% endif %}
       </div>

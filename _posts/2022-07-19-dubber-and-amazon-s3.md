@@ -11,6 +11,10 @@ AWS S3 is a cloud storage provider that is well-renowned for... well, storing da
 
 TransferVox can connect Dubber to Amazon S3 so that you can have a secondary backup of your recordings, or so that you can parse the calls using your own internal systems. TransferVox also offers other endpoints for your recordings, including SFTP, Azure, and Google Cloud Platform. 
 
+<div class="ps-md-4 mb-4 bg-light p-5 shadow-sm rounded text-center">
+	<img src="/assets/images/logos/dubber.svg" class="rounded-3 w-25 me-10" />
+	<img src="/assets/images/logos/amazons3.svg" class="rounded-3  w-25" />
+</div>
 
 ## Everything about Dubber
 
