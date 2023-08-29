@@ -431,6 +431,9 @@ a {
   color: #0099cc;
   text-decoration: underline;
 }
+.aunderline a :not(.btn) {
+  border-bottom: 1px solid rgba(0,153,204,.2);
+}
 a:hover {
   color: #02a5db;
   text-decoration: none;

@@ -27,7 +27,7 @@ Storing on Amazon is safer for many reasons - but it mostly comes down to two th
 
 ## How does TransferVox help integrate Dubber and Amazon S3?
 
-TransferVox, the absolute experts in call recording migrations, has just announced a new feature that will seamlessly integrate Dubber and S3. TransferVox seamlessly integrates the two, so that your recordings are immediately available in Amazon S3. TransferVox also works with a wide variety of other destination services to meet your needs. 
+TransferVox, the leading middleware platform focused on telephony integrations, seamlessly brings {{ page.service1 }} and {{ page.service2 }} together. You can also integrate {{ page.service1 }} with a wide variety of other services to meet your needs. 
 
 
 <a href="https://transfervox.com/request-demo/" class="btn btn-outline-dark">Get in touch with TransferVox today!</a>

@@ -12,20 +12,20 @@
       </div>
       <div class="col-lg-4 col-md-6 col-12 ms-auto">
         <div class="mb-4">
-          <h4 class="mb-4 text-white">Subscribe to our newsletter</h4>
+          <h4 class="mb-4 text-white">Contact us</h4>
           <div>
-            <p>Interested in learning more about our secure call transfer services? Enter your email to get tips and tricks about using TransferVox.</p>
-            {% include form-opt-in.html %}
+            <p>Interested in learning more about our secure call transfer services? Get in touch with our team today.</p>
+            <a href="/request-demo" class="btn btn-primary me-3">Get in Touch</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 col-12 ms-auto">
         <div class="mb-4">
-          <h4 class="mb-4" style="color:#515151;">Common connections</h4>
+          <h4 class="mb-4">Common connections</h4>
           <ul >
             {% for post in site.posts %}
             
-            <li><a href="{{ post.id }}" style="color:#515151;">{{ post.title }}</a></li>
+            <li><a href="{{ post.id }}">{{ post.title }}</a></li>
             {% endfor %}
             <li><a href="/ediscovery/">Export and archive phone calls for eDiscovery</a></li>
           </li>

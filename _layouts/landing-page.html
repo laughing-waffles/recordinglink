@@ -20,8 +20,18 @@ layout: page
               {% include form-lead.html %}
             </div>
           </div>
-          <div class="col-lg-8 col-md-7 col-12">
+          <div class="col-lg-8 col-md-7 col-12 aunderline">
             {{ content }}
+            
+            {% assign serviceposts = site.posts | where:"service1",page.offer_name | sort:"title" %}
+       {% if serviceposts.size > 0 %}
+        <br /><br /><hr /><br /> <h3>Explore ways you can extend {{page.offer_name}}</h3>
+       {% endif %}
+            {% for post in serviceposts %}
+            
+            
+            <li><a href="{{ post.id }}">{{ post.title }}</a></li>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -42,4 +52,6 @@ layout: page
     </div>
   </div>
 </div>
+{% comment %}
 {% include compliance-logos.html %}
+{% endcomment %}

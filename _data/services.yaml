@@ -51,6 +51,18 @@ from:
     name: Kixie
     image: kixie.svg
 to:
+  - id: dynamics
+    name: Dynamics 365
+    image: microsoft-dynamics-365.svg
+  - id: salesforce
+    name: Salesforce
+    image: salesforce.svg
+  - id: hubspot
+    name: HubSpot
+    image: hubspot.svg
+  - id: globalrelay
+    name: Global Relay
+    image: globalrelay.png
   - id: sftp
     name: SFTP
     image: sftp.png
@@ -75,9 +87,6 @@ to:
   - id: chorus
     name: Chorus.ai
     image: chorus.svg
-  # - id: quicktranscript
-  #   name: QuickTranscript
-  #   image: quicktranscript.svg
   - id: trint
     name: Trint
     image: trint.svg
