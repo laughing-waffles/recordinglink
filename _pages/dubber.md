@@ -16,7 +16,7 @@ discount: false
       <p>
          Connect your phone data — including call recordings and transcripts — to a wide variety of CRMs, AI analysis tools, or your custom system. TransferVox securely integrates with Dubber to let you create advanced automations to fit your needs. 
       </p>
-      <!-- <p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> -->
+      {% comment %}<p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> {% endcomment %}
     </div>
     <div class="col-md-6 order-1 order-md-2">
       <img src="{{ '/assets/images/313.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
@@ -29,8 +29,7 @@ discount: false
       <p>
         TransferVox allows you to securely and efficiently move your Dubber data to another storage location. If you have compliance requirements for your phone calls, keeping that data backed up is a critical piece of your disaster mitigation plans. 
       </p>
-      <!-- <p><a href="{{ 'how-to-price-festival-tickets/' | absolute_url }}">Learn more</a></p> -->
-    </div>
+{% comment %}<p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> {% endcomment %}    </div>
     <div class="col-md-6 order-1">
       <img src="{{ '/assets/images/225.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
     </div>
@@ -42,8 +41,7 @@ discount: false
       <p>
         Do you need to be able to deeply analyze your Dubber data? TransferVox can help you connect your existing BI and reporting tools with your phone provider or recording platform. Or, use our Dubber reporting console for your data analysis needs.
       </p>
-      <!-- <p><a href="{{ 'how-to-price-performing-arts-tickets/' | absolute_url }}">Learn more</a></p> -->
-    </div>
+{% comment %}<p><a href="{{ 'how-to-price-concert-tickets/' | absolute_url }}">Learn more</a></p> {% endcomment %}    </div>
     <div class="col-md-6 order-1 order-md-1 ">
       <img src="{{ '/assets/images/320.svg' | absolute_url }}" class="img-fluid" height="275px" width="413px" />
     </div>

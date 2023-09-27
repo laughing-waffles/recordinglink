@@ -42,9 +42,6 @@ layout: compress
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/98ad5c0e19.js" crossorigin="anonymous"></script>
 
-      <!-- reCAPTCHA JS -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
   </head>
 
   {% capture layout %} {% if page.layout %}layout-{{ page.layout }} {% endif %} {% endcapture %}
@@ -67,7 +64,7 @@ layout: compress
 
     <!-- Theme JS -->
     <script src="{{ 'assets/js/theme.js' | absolute_url }}"></script>
-
+    {% if jekyll.environment == 'production' %}
     <script type="text/javascript">
       (function (d, u, h, s) {
         h = d.getElementsByTagName('head')[0];
@@ -77,6 +74,7 @@ layout: compress
         h.appendChild(s);
       })(document, 'https://grow.clearbitjs.com/api/pixel.js?v=');
     </script>
+    {% endif %}
     <script type="application/ld+json">
      { "@context": "https://schema.org",
      "@type": "Organization",
