@@ -1,0 +1,839 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8"/>
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"/>
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <title>Transfer call recordings anywhere</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+      <style>
+        * {
+          font-family: sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style type="text/css">
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      body,
+      html {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0 !important;
+        mso-table-rspace: 0 !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+      table table table {
+        table-layout: auto;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: A work-around for iOS meddling in triggered links. */
+      .mobile-link--footer a,
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: underline !important;
+      }
+    </style>
+
+    <!-- Progressive Enhancements -->
+    <style>
+      /* What it does: Hover styles for buttons */
+      .button-a,
+      .button-td {
+        transition: all 100ms ease-in;
+      }
+      .button-a:hover,
+      .button-td:hover {
+        background: #555555 !important;
+        border-color: #555555 !important;
+      }
+
+      /* Media Queries */
+      @media screen and (max-width: 480px) {
+        /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+        .fluid,
+        .fluid-centered {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        /* And center justify these ones. */
+        .fluid-centered {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,
+        .stack-column-center {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          direction: ltr !important;
+        }
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align: center !important;
+        }
+
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align: center !important;
+          display: block !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+          float: none !important;
+        }
+        table.center-on-narrow {
+          display: inline-block !important;
+        }
+      }
+    </style>
+  </head>
+  <body width="100%" bgcolor="#222222" style="margin: 0">
+    <center style="width: 100%; background: #eeeeee">
+      <!-- Visually Hidden Preheader Text : BEGIN -->
+      <div
+        style="
+          display: none;
+          font-size: 1px;
+          line-height: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          opacity: 0;
+          overflow: hidden;
+          mso-hide: all;
+          font-family: sans-serif;
+        "
+      >
+        Securely transfer call recordings from anywhere, to anywhere. Break your recordings out of your vendor silos and retain data ownership.
+      </div>
+      <!-- Visually Hidden Preheader Text : END -->
+
+      <!--    
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+        -->
+      <div style="max-width: 680px; margin: auto">
+        <!--[if (gte mso 9)|(IE)]>
+            <table cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+            <tr>
+            <td>
+            <![endif]-->
+
+        <!-- Email Header : BEGIN -->
+        <table
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          align="center"
+          width="100%"
+          style="max-width: 680px"
+        >
+          <tr>
+            <td style="padding: 20px 0; text-align: center">
+              <a href="https://transfervox.com/?utm_source=outreach&utm_medium=email&utm_campaign=outreach-20221101&utm_id=20221101&utm_content=logo" target="_blank">
+                <img
+                  src="/assets/images/emails/outreach-20221101/logo.svg"
+                  width="200"
+                  height="50"
+                  alt="alt_text"
+                  border="0"
+/>
+              </a>
+            </td>
+          </tr>
+        </table>
+        <!-- Email Header : END -->
+
+        <!-- Email Body : BEGIN -->
+        <table
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          align="center"
+          bgcolor="#ffffff"
+          width="100%"
+          style="max-width: 680px"
+        >
+          <!-- Hero Image, Flush : BEGIN -->
+          <tr>
+            <td>
+              <img
+                src="/assets/images/emails/outreach-20221101/hero-bg.webp"
+                width="680"
+                height=""
+                alt="alt_text"
+                border="0"
+                align="center"
+                style="width: 100%; max-width: 680px"
+/>
+            </td>
+          </tr>
+          <!-- Hero Image, Flush : END -->
+
+          <!-- 1 Column Text + Button : BEGIN -->
+          <tr>
+            <td>
+              <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td
+                    style="
+                      padding: 40px 0 0 0;
+                      text-align: center;
+                      font-family: sans-serif;
+                      font-size: 25px;
+                      mso-height-rule: exactly;
+                      line-height: 20px;
+                      color: #555555;
+                    "
+                  >
+                    Transfer call recordings anywhere.
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding: 20px 0 40px 0;
+                      text-align: center;
+                      font-family: sans-serif;
+                      font-size: 15px;
+                      mso-height-rule: exactly;
+                      line-height: 20px;
+                      color: #555555;
+                    "
+                  >
+                    Securely transfer call recordings from anywhere, to
+                    anywhere. Break your recordings out of your vendor silos and
+                    retain data ownership.
+                    <br/><br/>
+                    <!-- Button : Begin -->
+                    <table
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      align="center"
+                      style="margin: auto"
+                    >
+                      <tr>
+                        <td
+                          style="
+                            border-radius: 3px;
+                            background: #222222;
+                            text-align: center;
+                          "
+                          class="button-td"
+                        >
+                          <a
+                            href="https://transfervox.com/request-demo/?utm_source=outreach&utm_medium=email&utm_campaign=outreach-20221101&utm_id=20221101&utm_content=request_demo"
+                            style="
+                              background: #0099cc;
+                              border: 15px solid #0099cc;
+                              font-family: sans-serif;
+                              font-size: 13px;
+                              line-height: 1.1;
+                              text-align: center;
+                              text-decoration: none;
+                              display: block;
+                              border-radius: 3px;
+                              font-weight: bold;
+                            "
+                            class="button-a"
+                            target="_blank"
+                          >
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff"
+                              >Request a demo now</span
+                            >&nbsp;&nbsp;&nbsp;&nbsp;
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- Button : END -->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- 1 Column Text + Button : BEGIN -->
+
+          <!-- Background Image with Text : BEGIN -->
+          <tr>
+            <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
+            <td
+              background="http://placehold.it/680x230/222222/666666"
+              bgcolor="#222222"
+              valign="middle"
+              style="
+                text-align: center;
+                background-position: center center !important;
+                background-size: cover !important;
+              "
+            >
+              <!--[if gte mso 9]>
+                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px;height:175px; background-position: center center !important;">
+                        <v:fill type="tile" src="http://placehold.it/680x230/222222/666666" color="#222222" />
+                        <v:textbox inset="0,0,0,0">
+                        <![endif]-->
+              <div>
+                <!--[if mso]>
+                            <table border="0" cellspacing="0" cellpadding="0" align="center" width="500">
+                            <tr>
+                            <td align="center" valign="top" width="500">
+                            <![endif]-->
+                <table
+                  border="0"
+                  cellpadding="0"
+                  cellspacing="0"
+                  align="center"
+                  width="100%"
+                  style="max-width: 500px; margin: auto"
+                >
+                  <tr>
+                    <td
+                      valign="middle"
+                      style="
+                        text-align: center;
+                        padding: 40px 20px;
+                        font-family: sans-serif;
+                        font-size: 15px;
+                        mso-height-rule: exactly;
+                        line-height: 20px;
+                        color: #ffffff;
+                      "
+                    >
+                      TransferVox seamlessly connects with your telephony
+                      platform and monitors for any new call recordings that
+                      occur. As soon as the recording is available, our system
+                      picks it up and transfers it to the endpoint that you’ve
+                      specified. This is all done with full encryption in
+                      transit and no call recording data is ever stored at rest
+                      by TransferVox.
+                    </td>
+                  </tr>
+                </table>
+                <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                            </tr>
+                            </table>
+                            <![endif]-->
+              </div>
+              <!--[if gte mso 9]>
+                        </v:textbox>
+                        </v:rect>
+                        <![endif]-->
+            </td>
+          </tr>
+          <!-- Background Image with Text : END -->
+
+          <!-- Thumbnail Left, Text Right : BEGIN -->
+          <tr>
+            <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+            <td
+              dir="ltr"
+              bgcolor="#ffffff"
+              align="center"
+              height="100%"
+              valign="top"
+              width="100%"
+              style="padding: 10px 0"
+            >
+              <!--[if mso]>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                width="100%"
+                style="max-width: 660px"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    valign="top"
+                    style="font-size: 0; padding: 10px 0"
+                  >
+                    <!--[if mso]>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                    <div
+                      style="
+                        display: inline-block;
+                        margin: 0 -2px;
+                        max-width: 200px;
+                        min-width: 160px;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                      class="stack-column"
+                    >
+                      <table
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td dir="ltr" style="padding: 0 10px 10px 10px">
+                            <img
+                              src="/assets/images/emails/outreach-20221101/silos.svg"
+                              width="200"
+                              alt=""
+                              style="border: 0; width: 100%; max-width: 200px"
+                              class="center-on-narrow"
+/>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+                    <div
+                      style="
+                        display: inline-block;
+                        margin: 0 -2px;
+                        max-width: 66.66%;
+                        min-width: 320px;
+                        vertical-align: top;
+                      "
+                      class="stack-column"
+                    >
+                      <table
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            dir="ltr"
+                            style="
+                              font-family: sans-serif;
+                              font-size: 15px;
+                              mso-height-rule: exactly;
+                              line-height: 20px;
+                              color: #555555;
+                              padding: 10px 10px 0;
+                              text-align: left;
+                            "
+                            class="center-on-narrow"
+                          >
+                            <strong style="color: #111111"
+                              >Break free from silos</strong
+                            >
+                            <br/><br/>
+                            Don’t let your sensitive call recording data be
+                            locked to a particular vendor. TransferVox allows
+                            you to securely and efficiently move your data to
+                            another storage location. Break free from arbitrary
+                            retention policies set by your provider — store your
+                            call recordings for the precise length of time you
+                            need!
+                            <br/><br/>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+            </td>
+          </tr>
+          <!-- Thumbnail Left, Text Right : END -->
+
+          <!-- Thumbnail Right, Text Left : BEGIN -->
+          <tr>
+            <!-- dir=rtl is where the magic happens. This can be changed to dir=ltr to swap the alignment on wide while maintaining stack order on narrow. -->
+            <td
+              dir="rtl"
+              bgcolor="#ffffff"
+              align="center"
+              height="100%"
+              valign="top"
+              width="100%"
+              style="padding: 10px 0"
+            >
+              <!--[if mso]>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                width="100%"
+                style="max-width: 660px"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    valign="top"
+                    style="font-size: 0; padding: 10px 0"
+                  >
+                    <!--[if mso]>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                    <div
+                      style="
+                        display: inline-block;
+                        margin: 0 -2px;
+                        max-width: 200px;
+                        min-width: 160px;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                      class="stack-column"
+                    >
+                      <table
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td dir="ltr" style="padding: 0 10px 10px 10px">
+                            <img
+                              src="/assets/images/emails/outreach-20221101/move.svg"
+                              width="200"
+                              alt=""
+                              style="border: 0; width: 100%; max-width: 200px"
+                              class="center-on-narrow"
+/>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+                    <div
+                      style="
+                        display: inline-block;
+                        margin: 0 -2px;
+                        max-width: 66.66%;
+                        min-width: 320px;
+                        vertical-align: top;
+                      "
+                      class="stack-column"
+                    >
+                      <table
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            dir="ltr"
+                            style="
+                              font-family: sans-serif;
+                              font-size: 15px;
+                              mso-height-rule: exactly;
+                              line-height: 20px;
+                              color: #555555;
+                              padding: 10px 10px 0;
+                              text-align: left;
+                            "
+                            class="center-on-narrow"
+                          >
+                            <strong style="color: #111111"
+                              >Move recordings to other platforms</strong
+                            >
+                            <br/><br/>
+                            Are you using AI or NLP for your calls? Get access
+                            to the latest and greatest in speech analytics — and
+                            change with ease when the next new thing comes
+                            along. We'll ensure your recordings are delivered to
+                            any AI provider so that your team can stay on the
+                            leading edge.
+                            <br/><br/>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+            </td>
+          </tr>
+          <!-- Thumbnail Right, Text Left : END -->
+
+          <!-- Thumbnail Left, Text Right : BEGIN -->
+          <tr>
+            <!-- dir=ltr is where the magic happens. This can be changed to dir=rtl to swap the alignment on wide while maintaining stack order on narrow. -->
+            <td
+              dir="ltr"
+              bgcolor="#ffffff"
+              align="center"
+              height="100%"
+              valign="top"
+              width="100%"
+              style="padding: 10px 0"
+            >
+              <!--[if mso]>
+                        <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                        <tr>
+                        <td align="center" valign="top" width="660">
+                        <![endif]-->
+              <table
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                align="center"
+                width="100%"
+                style="max-width: 660px"
+              >
+                <tr>
+                  <td
+                    align="center"
+                    valign="top"
+                    style="font-size: 0; padding: 10px 0"
+                  >
+                    <!--[if mso]>
+                                    <table border="0" cellspacing="0" cellpadding="0" align="center" width="660">
+                                    <tr>
+                                    <td align="left" valign="top" width="220">
+                                    <![endif]-->
+                    <div
+                      style="
+                        display: inline-block;
+                        margin: 0 -2px;
+                        max-width: 200px;
+                        min-width: 160px;
+                        vertical-align: top;
+                        width: 100%;
+                      "
+                      class="stack-column"
+                    >
+                      <table
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td dir="ltr" style="padding: 0 10px 10px 10px">
+                            <img
+                              src="/assets/images/emails/outreach-20221101/compliance.svg"
+                              width="200"
+                              alt=""
+                              style="border: 0; width: 100%; max-width: 200px"
+                              class="center-on-narrow"
+/>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
+                                    </td>
+                                    <td align="left" valign="top" width="440">
+                                    <![endif]-->
+                    <div
+                      style="
+                        display: inline-block;
+                        margin: 0 -2px;
+                        max-width: 66.66%;
+                        min-width: 320px;
+                        vertical-align: top;
+                      "
+                      class="stack-column"
+                    >
+                      <table
+                        cellspacing="0"
+                        cellpadding="0"
+                        border="0"
+                        width="100%"
+                      >
+                        <tr>
+                          <td
+                            dir="ltr"
+                            style="
+                              font-family: sans-serif;
+                              font-size: 15px;
+                              mso-height-rule: exactly;
+                              line-height: 20px;
+                              color: #555555;
+                              padding: 10px 10px 0;
+                              text-align: left;
+                            "
+                            class="center-on-narrow"
+                          >
+                            <strong style="color: #111111"
+                              >Complete compliance</strong
+                            >
+                            <br/><br/>
+                            Relying on a single vendor to manage your call
+                            recordings leaves you exposed to hackers,
+                            inadvertent deletions, and other mishaps. You
+                            wouldn’t backup your mission critical data to a
+                            single datacenter. Keep your call recording storage
+                            diversified so that it is available on your terms
+                            and under your control.
+                            <br/><br/>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+              <!--[if mso]>
+                        </td>
+                        </tr>
+                        </table>
+                        <![endif]-->
+            </td>
+          </tr>
+          <!-- Thumbnail Left, Text Right : END -->
+        </table>
+        <!-- Email Body : END -->
+
+        <!-- Email Footer : BEGIN -->
+        <table
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          align="center"
+          width="100%"
+          style="max-width: 680px"
+        >
+          <tr>
+            <td
+              style="
+                padding: 40px 10px;
+                width: 100%;
+                font-size: 12px;
+                font-family: sans-serif;
+                mso-height-rule: exactly;
+                line-height: 18px;
+                text-align: center;
+                color: #888888;
+              "
+            >
+              <a href="https://transfervox.com/emails/outreach-20221101/?utm_source=outreach&utm_medium=email&utm_campaign=outreach-20221101&utm_id=20221101&utm_content=webversion" target="_blank">
+                <webversion
+                style="
+                  color: #cccccc;
+                  text-decoration: underline;
+                  font-weight: bold;
+                "
+                >
+                View as a Web Page</a>
+              </webversion
+              >
+            </a>
+            <br/><br/>
+              TransferVox<br/>
+            <span class="mobile-link--footer"
+                >PO Box 6724 Austin, TX 78762</span
+              ><br/>
+            <span class="mobile-link--footer">(512) 359-8903</span>
+            <br/><br/>
+            <a href="https://transfervox.com/unsubscribed/?utm_source=outreach&utm_medium=email&utm_campaign=outreach-20221101&utm_id=20221101&utm_content=unsubscribe" target="_blank">
+              <unsubscribe style="color: #888888; text-decoration: underline"
+                  >unsubscribe</unsubscribe
+                >
+            </a
+              >
+          </td>
+        </tr>
+      </table>
+      <!-- Email Footer : END -->
+
+      <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+    </div>
+  </center>
+</body>
+</html>
