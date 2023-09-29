@@ -35,7 +35,7 @@
           {% for item in site.data.nav.main %}
           {% if item.dropdown-title %}
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="menu-{{ forloop.index }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="{{item.url | default: "#"}}" id="menu-{{ forloop.index }}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ item.dropdown-title }}
             </a>
             <ul class="dropdown-menu dropdown-menu-arrow dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="menu-{{ forloop.index }}">

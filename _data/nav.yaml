@@ -13,6 +13,18 @@ main:
         url: /dubber
       - title: Litigation / eDiscovery
         url: /ediscovery
+  - dropdown-title: Dubber
+    dropdown-items:
+      - title: TransferVox for Dubber
+        url: /dubber
+      - title: Dubber ↔ Dynamics 365
+        url: /dubber-and-dynamics365
+      - title: Dubber ↔ Salesforce
+        url: /dubber-and-salesforce
+      - title: Dubber ↔ Global Relay
+        url: /dubber-and-globalrelay
+      - title: Custom Integrations with Dubber
+        url: /dubber-custom-api-integration
 bottom-bar:
   - title: Terms of Service
     url: /terms/
